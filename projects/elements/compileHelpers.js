@@ -6,5 +6,5 @@ function compileMainTheme() {
     const pathFrom = `../espresso-ui/src`;
     const pathTo = `dist/helpers`;
 
-    execSync(`lessc ${pathFrom}/global-vars.less ${pathTo}/main-theme.css`);
+    execSync(`lessc ${pathFrom}/tailwind-compiled.less ${pathTo}/main-theme.css`);
 }

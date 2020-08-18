@@ -9,12 +9,14 @@
     ],
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
-        "build": "ng build",
+        "start": "ng serve & ngtw watch",
+        "build": "ngtw build --purge && ng build",
         "build:elements": "cd projects/elements && sh buildElements.sh",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "tailwind": "ngtw build",
+        "purge": "ngtw build --purge"
     },
     "dependencies": {
         "@angular-builders/custom-webpack": "^10.0.0",

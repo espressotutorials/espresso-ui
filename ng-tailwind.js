@@ -2,10 +2,10 @@ module.exports = {
   // Tailwind Paths
   configJS: 'tailwind.config.js',
   sourceCSS: 'projects/assets/tailwind.css',
-  outputCSS: 'projects/assets/tailwind-compiled.css',
+  outputCSS: 'projects/espresso-ui/src/tailwind-compiled.less',
   watchRelatedFiles: [],
   // Sass
-  sass: true,
+  sass: false,
   // PurgeCSS Settings
   purge: false,
   keyframes: false,

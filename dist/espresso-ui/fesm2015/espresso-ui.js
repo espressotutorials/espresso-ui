@@ -6,12 +6,12 @@ const _c0 = ["*"];
 class ButtonComponent {
 }
 /** @nocollapse */ ButtonComponent.ɵfac = function ButtonComponent_Factory(t) { return new (t || ButtonComponent)(); };
-/** @nocollapse */ ButtonComponent.ɵcmp = ɵɵdefineComponent({ type: ButtonComponent, selectors: [["lib-button"]], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "native-button"]], template: function ButtonComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ ButtonComponent.ɵcmp = ɵɵdefineComponent({ type: ButtonComponent, selectors: [["lib-button"]], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "et-bg-blue-500", "hover:et-bg-orange-500", "et-text-white", "et-font-bold", "et-py-2", "et-px-4", "et-rounded", "et-no-underline"]], template: function ButtonComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵprojectionDef();
         ɵɵelementStart(0, "button", 0);
         ɵɵprojection(1);
         ɵɵelementEnd();
-    } }, styles: ["[_nghost-%COMP%]{display:block;width:-webkit-max-content;width:-moz-max-content;width:max-content}.native-button[_ngcontent-%COMP%]{padding:16px 24px;border-radius:4px}.native-button[_ngcontent-%COMP%]:hover{cursor:pointer}"], changeDetection: 0 });
+    } }, styles: [""], changeDetection: 0 });
 /*@__PURE__*/ (function () { ɵsetClassMetadata(ButtonComponent, [{
         type: Component,
         args: [{
@@ -47,13 +47,13 @@ class InputComponent {
     }
 }
 /** @nocollapse */ InputComponent.ɵfac = function InputComponent_Factory(t) { return new (t || InputComponent)(); };
-/** @nocollapse */ InputComponent.ɵcmp = ɵɵdefineComponent({ type: InputComponent, selectors: [["lib-input"]], inputs: { value: "value", placeholder: "placeholder" }, outputs: { valueChange: "valueChange" }, decls: 1, vars: 2, consts: [[1, "native-input", 3, "placeholder", "ngModel", "ngModelChange"]], template: function InputComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ InputComponent.ɵcmp = ɵɵdefineComponent({ type: InputComponent, selectors: [["lib-input"]], inputs: { value: "value", placeholder: "placeholder" }, outputs: { valueChange: "valueChange" }, decls: 1, vars: 2, consts: [[1, "et-appearance-none", "et-border", "et-border-gray-200", "et-border-solid", "et-rounded", "et-w-full", "et-py-2", "et-px-3", "et-text-gray-800", "et-leading-tight", "focus:et-outline-none", 3, "placeholder", "ngModel", "ngModelChange"]], template: function InputComponent_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "input", 0);
         ɵɵlistener("ngModelChange", function InputComponent_Template_input_ngModelChange_0_listener($event) { return ctx.onInputValueChange($event); });
         ɵɵelementEnd();
     } if (rf & 2) {
         ɵɵproperty("placeholder", ctx.placeholder)("ngModel", ctx.value);
-    } }, directives: [DefaultValueAccessor, NgControlStatus, NgModel], styles: ["[_nghost-%COMP%]{display:block;width:-webkit-max-content;width:-moz-max-content;width:max-content}.native-input[_ngcontent-%COMP%]{padding:16px;border-radius:4px}"], changeDetection: 0 });
+    } }, directives: [DefaultValueAccessor, NgControlStatus, NgModel], styles: [""], changeDetection: 0 });
 /*@__PURE__*/ (function () { ɵsetClassMetadata(InputComponent, [{
         type: Component,
         args: [{

@@ -16,7 +16,7 @@ function compileComponent(project, component) {
 
     const buildJsFiles = `ng run elements:build:production --aot --main=projects/elements/src/${project}/${component}/compile.ts`;
     const bundleIntoSingleFile = `cat dist/tmp/runtime-es2015.js dist/tmp/main-es2015.js > dist/tmp/et-${component}.js`;
-    const copyBundledComponent = `cp dist/tmp/et-${component}.js dist/components/`;
+    const copyBundledComponent = `cp dist/tmp/et-${component}.js dist/lib/`;
 
     execSync(`${buildJsFiles} && ${bundleIntoSingleFile} && ${copyBundledComponent}`);
 }

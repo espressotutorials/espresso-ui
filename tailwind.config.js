@@ -1,7 +1,7 @@
 // let defaultConfig = require('tailwindcss/defaultConfig');
 
 module.exports = {
-  prefix: '',
+  prefix: 'et-',
   important: false,
   separator: ':',
   theme: {

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 rm -r -f dist/ &&
-mkdir -p dist/components &&
+mkdir -p dist/lib &&
 node compileElements.js &&
 node compileHelpers.js &&
 rm -r -f dist/tmp

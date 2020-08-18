@@ -2,8 +2,8 @@
  * Public API Surface of angular-components-library
  */
 
-export * from './components/button/button.component';
-export * from './components/button/button.module';
+export * from './lib/button/button.component';
+export * from './lib/button/button.module';
 
-export * from './components/input/input.component';
-export * from './components/input/input.module';
+export * from './lib/input/input.component';
+export * from './lib/input/input.module';
