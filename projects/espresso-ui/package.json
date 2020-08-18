@@ -1,0 +1,8 @@
+{
+  "name": "espresso-ui",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^10.0.10",
+    "@angular/core": "^10.0.10"
+  }
+}
