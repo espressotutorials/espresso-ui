@@ -1,10 +1,10 @@
 import {enableProdMode} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
-import {InputElementModule} from './input.module';
+import { CardElementModule } from './card.module';
 
 enableProdMode();
 
 platformBrowserDynamic()
-    .bootstrapModule(InputElementModule)
+    .bootstrapModule(CardElementModule)
     .catch(err => console.error(err));

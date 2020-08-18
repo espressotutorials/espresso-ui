@@ -1,18 +1,17 @@
-import { ɵɵdefineComponent, ɵɵprojectionDef, ɵɵelementStart, ɵɵprojection, ɵɵelementEnd, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, EventEmitter, ɵɵlistener, ɵɵproperty, Input, Output } from '@angular/core';
+import { ɵɵdefineComponent, ɵɵprojectionDef, ɵɵelementStart, ɵɵprojection, ɵɵelementEnd, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DefaultValueAccessor, NgControlStatus, NgModel, FormsModule } from '@angular/forms';
 
 var _c0 = ["*"];
 var ButtonComponent = /** @class */ (function () {
     function ButtonComponent() {
     }
     /** @nocollapse */ ButtonComponent.ɵfac = function ButtonComponent_Factory(t) { return new (t || ButtonComponent)(); };
-    /** @nocollapse */ ButtonComponent.ɵcmp = ɵɵdefineComponent({ type: ButtonComponent, selectors: [["lib-button"]], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "et-bg-blue-500", "hover:et-bg-orange-500", "et-text-white", "et-font-bold", "et-py-2", "et-px-4", "et-rounded", "et-no-underline"]], template: function ButtonComponent_Template(rf, ctx) { if (rf & 1) {
+    /** @nocollapse */ ButtonComponent.ɵcmp = ɵɵdefineComponent({ type: ButtonComponent, selectors: [["lib-button"]], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "btn"]], template: function ButtonComponent_Template(rf, ctx) { if (rf & 1) {
             ɵɵprojectionDef();
             ɵɵelementStart(0, "button", 0);
             ɵɵprojection(1);
             ɵɵelementEnd();
-        } }, styles: [""], changeDetection: 0 });
+        } }, styles: ["[_nghost-%COMP%]{display:block;width:-webkit-max-content;width:-moz-max-content;width:max-content}.btn[_ngcontent-%COMP%]{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:.25rem}.btn[_ngcontent-%COMP%]:hover{background:var(--color-orange-400)}"], changeDetection: 0 });
     return ButtonComponent;
 }());
 /*@__PURE__*/ (function () { ɵsetClassMetadata(ButtonComponent, [{
@@ -29,7 +28,9 @@ var ButtonModule = /** @class */ (function () {
     function ButtonModule() {
     }
     /** @nocollapse */ ButtonModule.ɵmod = ɵɵdefineNgModule({ type: ButtonModule });
-    /** @nocollapse */ ButtonModule.ɵinj = ɵɵdefineInjector({ factory: function ButtonModule_Factory(t) { return new (t || ButtonModule)(); }, imports: [[CommonModule]] });
+    /** @nocollapse */ ButtonModule.ɵinj = ɵɵdefineInjector({ factory: function ButtonModule_Factory(t) { return new (t || ButtonModule)(); }, imports: [[
+                CommonModule
+            ]] });
     return ButtonModule;
 }());
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(ButtonModule, { declarations: [ButtonComponent], imports: [CommonModule], exports: [ButtonComponent] }); })();
@@ -37,60 +38,59 @@ var ButtonModule = /** @class */ (function () {
         type: NgModule,
         args: [{
                 declarations: [ButtonComponent],
-                imports: [CommonModule],
-                exports: [ButtonComponent],
+                imports: [
+                    CommonModule
+                ],
+                exports: [
+                    ButtonComponent
+                ],
             }]
     }], null, null); })();
 
-var InputComponent = /** @class */ (function () {
-    function InputComponent() {
-        this.value = '';
-        this.placeholder = '';
-        this.valueChange = new EventEmitter();
+var _c0$1 = ["*"];
+var CardComponent = /** @class */ (function () {
+    function CardComponent() {
     }
-    InputComponent.prototype.onInputValueChange = function (value) {
-        this.valueChange.emit(value);
-    };
-    /** @nocollapse */ InputComponent.ɵfac = function InputComponent_Factory(t) { return new (t || InputComponent)(); };
-    /** @nocollapse */ InputComponent.ɵcmp = ɵɵdefineComponent({ type: InputComponent, selectors: [["lib-input"]], inputs: { value: "value", placeholder: "placeholder" }, outputs: { valueChange: "valueChange" }, decls: 1, vars: 2, consts: [[1, "et-appearance-none", "et-border", "et-border-gray-200", "et-border-solid", "et-rounded", "et-w-full", "et-py-2", "et-px-3", "et-text-gray-800", "et-leading-tight", "focus:et-outline-none", 3, "placeholder", "ngModel", "ngModelChange"]], template: function InputComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵelementStart(0, "input", 0);
-            ɵɵlistener("ngModelChange", function InputComponent_Template_input_ngModelChange_0_listener($event) { return ctx.onInputValueChange($event); });
+    /** @nocollapse */ CardComponent.ɵfac = function CardComponent_Factory(t) { return new (t || CardComponent)(); };
+    /** @nocollapse */ CardComponent.ɵcmp = ɵɵdefineComponent({ type: CardComponent, selectors: [["lib-card"]], ngContentSelectors: _c0$1, decls: 2, vars: 0, consts: [[1, "card"]], template: function CardComponent_Template(rf, ctx) { if (rf & 1) {
+            ɵɵprojectionDef();
+            ɵɵelementStart(0, "div", 0);
+            ɵɵprojection(1);
             ɵɵelementEnd();
-        } if (rf & 2) {
-            ɵɵproperty("placeholder", ctx.placeholder)("ngModel", ctx.value);
-        } }, directives: [DefaultValueAccessor, NgControlStatus, NgModel], styles: [""], changeDetection: 0 });
-    return InputComponent;
+        } }, styles: [":host{display:block;width:-webkit-max-content;width:-moz-max-content;width:max-content}.card{position:relative;background:var(--color-white);border-radius:.25rem;box-shadow:var(--shadow-lg);display:flex;flex-direction:row;justify-content:flex-start}"], encapsulation: 3, changeDetection: 0 });
+    return CardComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(InputComponent, [{
+/*@__PURE__*/ (function () { ɵsetClassMetadata(CardComponent, [{
         type: Component,
         args: [{
-                selector: 'lib-input',
-                templateUrl: './input.component.html',
-                styleUrls: ['./input.component.less'],
+                selector: 'lib-card',
+                templateUrl: './card.component.html',
+                styleUrls: ['./card.component.less'],
                 changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.ShadowDom
             }]
-    }], null, { value: [{
-            type: Input
-        }], placeholder: [{
-            type: Input
-        }], valueChange: [{
-            type: Output
-        }] }); })();
+    }], null, null); })();
 
-var InputModule = /** @class */ (function () {
-    function InputModule() {
+var CardModule = /** @class */ (function () {
+    function CardModule() {
     }
-    /** @nocollapse */ InputModule.ɵmod = ɵɵdefineNgModule({ type: InputModule });
-    /** @nocollapse */ InputModule.ɵinj = ɵɵdefineInjector({ factory: function InputModule_Factory(t) { return new (t || InputModule)(); }, imports: [[CommonModule, FormsModule]] });
-    return InputModule;
+    /** @nocollapse */ CardModule.ɵmod = ɵɵdefineNgModule({ type: CardModule });
+    /** @nocollapse */ CardModule.ɵinj = ɵɵdefineInjector({ factory: function CardModule_Factory(t) { return new (t || CardModule)(); }, imports: [[
+                CommonModule
+            ]] });
+    return CardModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(InputModule, { declarations: [InputComponent], imports: [CommonModule, FormsModule], exports: [InputComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(InputModule, [{
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CardModule, { declarations: [CardComponent], imports: [CommonModule], exports: [CardComponent] }); })();
+/*@__PURE__*/ (function () { ɵsetClassMetadata(CardModule, [{
         type: NgModule,
         args: [{
-                declarations: [InputComponent],
-                imports: [CommonModule, FormsModule],
-                exports: [InputComponent],
+                declarations: [CardComponent],
+                imports: [
+                    CommonModule
+                ],
+                exports: [
+                    CardComponent
+                ]
             }]
     }], null, null); })();
 
@@ -102,5 +102,5 @@ var InputModule = /** @class */ (function () {
  * Generated bundle index. Do not edit.
  */
 
-export { ButtonComponent, ButtonModule, InputComponent, InputModule };
+export { ButtonComponent, ButtonModule, CardComponent, CardModule };
 //# sourceMappingURL=espresso-ui.js.map

@@ -1,8 +1,8 @@
-import {Injector, NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { Injector, NgModule } from '@angular/core';
+import { BrowserModule} from '@angular/platform-browser';
 
-import {ElementModule} from '../../abstract/element.module';
-import {ButtonModule, ButtonComponent} from '../../../../espresso-ui/src/public-api';
+import { ElementModule } from '../../abstract/element.module';
+import { ButtonModule, ButtonComponent } from '../../../../espresso-ui/src/public-api';
 
 @NgModule({
     imports: [BrowserModule, ButtonModule],

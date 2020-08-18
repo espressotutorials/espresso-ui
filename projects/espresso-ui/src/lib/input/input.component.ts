@@ -1,10 +1,11 @@
-import {Component, OnInit, Input, ChangeDetectionStrategy, Output, EventEmitter} from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'lib-input',
     templateUrl: './input.component.html',
     styleUrls: ['./input.component.less'],
     changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.ShadowDom
 })
 export class InputComponent {
     @Input()

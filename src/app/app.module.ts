@@ -2,13 +2,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {ButtonModule, InputModule} from 'projects/angular-components-library/src/public-api';
-import {BadgeModule} from 'projects/another-angular-components-library/src/public-api';
-import { TestComponent } from './test/test.component';
+import {ButtonModule, CardModule} from 'projects/espresso-ui/src/public-api';
 
 @NgModule({
-    declarations: [AppComponent, TestComponent],
-    imports: [BrowserModule, ButtonModule, BadgeModule, InputModule],
+    declarations: [AppComponent],
+    imports: [BrowserModule, ButtonModule, CardModule],
     providers: [],
     bootstrap: [AppComponent],
 })
