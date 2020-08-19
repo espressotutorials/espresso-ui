@@ -12,3 +12,30 @@ The espresso-ui library offers a set of customizable native angular- and web com
 -   `ng serve` — start an Angular demo app with Angular components
 -   `ng build espresso-ui` — build native Angular components
 -   `npm run build:elements` — build single JS file Web Components from Angular components
+
+## Available Angular Components
+
+- `lib-card`
+- `lib-card-body`
+- `lib-card-content`
+- `lib-card-overlay`
+- `lib-card-footer`
+- `lib-card-title`
+- `lib-card-image`
+- `lib-card-author`
+- `lib-card-meta`
+- `lib-card-description`
+- `lib-card-time`
+- `button`
+- `button-link`
+- `button-favorite`
+- `rating`
+
+## Available Web Components
+
+- `et-card`
+- `et-button`
+
+## ToDo
+
+- `author` `review` `sharing` `description` `information` `title` `dropdown-select` `card-horizontal` ...
