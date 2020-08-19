@@ -38,4 +38,4 @@ The espresso-ui library offers a set of customizable native angular- and web com
 
 ## ToDo
 
-- `author` `review` `sharing` `description` `information` `title` `dropdown-select` `card-horizontal` ...
+- `author` `review` `sharing` `testimonial` `description` `information` `title` `dropdown-select` `card-horizontal` `cover` `section` `logo` `accordion` …
