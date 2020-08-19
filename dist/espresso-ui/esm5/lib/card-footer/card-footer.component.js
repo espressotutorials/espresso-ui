@@ -10,7 +10,7 @@ var CardFooterComponent = /** @class */ (function () {
             i0.ɵɵelementStart(0, "div", 0);
             i0.ɵɵprojection(1);
             i0.ɵɵelementEnd();
-        } }, styles: [".card__footer{align-self:flex-end;padding:0 1.5rem 1.5rem 1rem}"], encapsulation: 3, changeDetection: 0 });
+        } }, styles: [".card__footer{align-self:flex-end;padding:0 1rem 1rem}"], encapsulation: 3, changeDetection: 0 });
     return CardFooterComponent;
 }());
 export { CardFooterComponent };

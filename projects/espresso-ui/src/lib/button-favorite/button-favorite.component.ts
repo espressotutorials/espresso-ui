@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'lib-button-favorite',
@@ -9,17 +9,22 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output
 })
 export class ButtonFavoriteComponent {
 
-  @Input()
-  favorite = false;
+  @Input() favorite = false;
+  @Input() id: string;
+  @Input() title?: string;
+  @Input() cover?: string;
+  @Input() type?: string;
 
   @Output()
-  readonly favoriteChange = new EventEmitter<boolean>();
+  readonly favoriteChange = new EventEmitter<any>();
 
   toggleValueChange() {
     if (this.favorite) {
-      this.favoriteChange.emit(false);
+      this.favoriteChange.emit([false, this.id, this.title, this.cover, this.type]);
+      this.favorite = false;
     } else {
-      this.favoriteChange.emit(true);
+      this.favoriteChange.emit([true, this.id, this.title, this.cover, this.type]);
+      this.favorite = true;
     }
   }
 

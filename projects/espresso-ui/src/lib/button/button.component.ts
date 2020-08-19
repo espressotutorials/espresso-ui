@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'lib-button',
@@ -7,4 +7,16 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.ShadowDom
 })
-export class ButtonComponent {}
+export class ButtonComponent {
+
+    @Input() value?: string;
+    @Input() secondary?: boolean;
+
+    @Output()
+    readonly clickEvent = new EventEmitter<any>();
+
+    onClick(value?: any) {
+        this.clickEvent.emit(value);
+    }
+
+}

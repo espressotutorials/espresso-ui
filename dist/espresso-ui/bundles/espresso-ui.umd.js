@@ -7,14 +7,21 @@
     var _c0 = ["*"];
     var ButtonComponent = /** @class */ (function () {
         function ButtonComponent() {
+            this.clickEvent = new core.EventEmitter();
         }
+        ButtonComponent.prototype.onClick = function (value) {
+            this.clickEvent.emit(value);
+        };
         /** @nocollapse */ ButtonComponent.ɵfac = function ButtonComponent_Factory(t) { return new (t || ButtonComponent)(); };
-        /** @nocollapse */ ButtonComponent.ɵcmp = core.ɵɵdefineComponent({ type: ButtonComponent, selectors: [["lib-button"]], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "btn"]], template: function ButtonComponent_Template(rf, ctx) { if (rf & 1) {
+        /** @nocollapse */ ButtonComponent.ɵcmp = core.ɵɵdefineComponent({ type: ButtonComponent, selectors: [["lib-button"]], inputs: { value: "value", secondary: "secondary" }, outputs: { clickEvent: "clickEvent" }, ngContentSelectors: _c0, decls: 2, vars: 2, consts: [[1, "button", 3, "click"]], template: function ButtonComponent_Template(rf, ctx) { if (rf & 1) {
                 core.ɵɵprojectionDef();
                 core.ɵɵelementStart(0, "button", 0);
+                core.ɵɵlistener("click", function ButtonComponent_Template_button_click_0_listener() { return ctx.onClick(ctx.value); });
                 core.ɵɵprojection(1);
                 core.ɵɵelementEnd();
-            } }, styles: [".btn{width:100%;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:.25rem}.btn:hover{background:var(--color-orange-400)}"], encapsulation: 3, changeDetection: 0 });
+            } if (rf & 2) {
+                core.ɵɵclassProp("button--secondary", ctx.secondary);
+            } }, styles: [".button{width:100%;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:.25rem}.button--secondary,.button:hover{background:var(--color-orange-400)}.button--secondary:hover{background:var(--color-blue-400)}"], encapsulation: 3, changeDetection: 0 });
         return ButtonComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ButtonComponent, [{
@@ -26,7 +33,13 @@
                     changeDetection: core.ChangeDetectionStrategy.OnPush,
                     encapsulation: core.ViewEncapsulation.ShadowDom
                 }]
-        }], null, null); })();
+        }], null, { value: [{
+                type: core.Input
+            }], secondary: [{
+                type: core.Input
+            }], clickEvent: [{
+                type: core.Output
+            }] }); })();
 
     var ButtonModule = /** @class */ (function () {
         function ButtonModule() {
@@ -72,14 +85,16 @@
         }
         ButtonFavoriteComponent.prototype.toggleValueChange = function () {
             if (this.favorite) {
-                this.favoriteChange.emit(false);
+                this.favoriteChange.emit([false, this.id, this.title, this.cover, this.type]);
+                this.favorite = false;
             }
             else {
-                this.favoriteChange.emit(true);
+                this.favoriteChange.emit([true, this.id, this.title, this.cover, this.type]);
+                this.favorite = true;
             }
         };
         /** @nocollapse */ ButtonFavoriteComponent.ɵfac = function ButtonFavoriteComponent_Factory(t) { return new (t || ButtonFavoriteComponent)(); };
-        /** @nocollapse */ ButtonFavoriteComponent.ɵcmp = core.ɵɵdefineComponent({ type: ButtonFavoriteComponent, selectors: [["lib-button-favorite"]], inputs: { favorite: "favorite" }, outputs: { favoriteChange: "favoriteChange" }, decls: 4, vars: 4, consts: [[1, "button-favorite", 3, "click"], [4, "ngIf", "ngIfElse"], ["isFav", ""], ["aria-hidden", "true", "focusable", "false", "data-prefix", "far", "data-icon", "heart", "role", "img", "xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 512 512"], ["fill", "currentColor", "d", "M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"], ["aria-hidden", "true", "focusable", "false", "data-prefix", "fas", "data-icon", "heart", "role", "img", "xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 512 512"], ["fill", "currentColor", "d", "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"]], template: function ButtonFavoriteComponent_Template(rf, ctx) { if (rf & 1) {
+        /** @nocollapse */ ButtonFavoriteComponent.ɵcmp = core.ɵɵdefineComponent({ type: ButtonFavoriteComponent, selectors: [["lib-button-favorite"]], inputs: { favorite: "favorite", id: "id", title: "title", cover: "cover", type: "type" }, outputs: { favoriteChange: "favoriteChange" }, decls: 4, vars: 4, consts: [[1, "button-favorite", 3, "click"], [4, "ngIf", "ngIfElse"], ["isFav", ""], ["aria-hidden", "true", "focusable", "false", "data-prefix", "far", "data-icon", "heart", "role", "img", "xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 512 512"], ["fill", "currentColor", "d", "M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"], ["aria-hidden", "true", "focusable", "false", "data-prefix", "fas", "data-icon", "heart", "role", "img", "xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 512 512"], ["fill", "currentColor", "d", "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"]], template: function ButtonFavoriteComponent_Template(rf, ctx) { if (rf & 1) {
                 core.ɵɵelementStart(0, "button", 0);
                 core.ɵɵlistener("click", function ButtonFavoriteComponent_Template_button_click_0_listener() { return ctx.toggleValueChange(); });
                 core.ɵɵtemplate(1, ButtonFavoriteComponent_ng_container_1_Template, 3, 0, "ng-container", 1);
@@ -103,6 +118,14 @@
                     encapsulation: core.ViewEncapsulation.ShadowDom
                 }]
         }], null, { favorite: [{
+                type: core.Input
+            }], id: [{
+                type: core.Input
+            }], title: [{
+                type: core.Input
+            }], cover: [{
+                type: core.Input
+            }], type: [{
                 type: core.Input
             }], favoriteChange: [{
                 type: core.Output
@@ -135,13 +158,13 @@
         function ButtonLinkComponent() {
         }
         /** @nocollapse */ ButtonLinkComponent.ɵfac = function ButtonLinkComponent_Factory(t) { return new (t || ButtonLinkComponent)(); };
-        /** @nocollapse */ ButtonLinkComponent.ɵcmp = core.ɵɵdefineComponent({ type: ButtonLinkComponent, selectors: [["lib-button-link"]], inputs: { url: "url", label: "label", title: "title", rel: "rel", target: "target", secondary: "secondary" }, decls: 2, vars: 6, consts: [[1, "button-link", 3, "href", "title", "target"]], template: function ButtonLinkComponent_Template(rf, ctx) { if (rf & 1) {
+        /** @nocollapse */ ButtonLinkComponent.ɵcmp = core.ɵɵdefineComponent({ type: ButtonLinkComponent, selectors: [["lib-button-link"]], inputs: { url: "url", label: "label", title: "title", rel: "rel", target: "target", secondary: "secondary" }, decls: 2, vars: 7, consts: [[1, "button-link", 3, "href", "title", "target", "rel"]], template: function ButtonLinkComponent_Template(rf, ctx) { if (rf & 1) {
                 core.ɵɵelementStart(0, "a", 0);
                 core.ɵɵtext(1);
                 core.ɵɵelementEnd();
             } if (rf & 2) {
                 core.ɵɵclassProp("button-link--secondary", ctx.secondary);
-                core.ɵɵproperty("href", ctx.url, core.ɵɵsanitizeUrl)("title", ctx.title)("target", ctx.target);
+                core.ɵɵproperty("href", ctx.url, core.ɵɵsanitizeUrl)("title", ctx.title)("target", ctx.target)("rel", ctx.rel);
                 core.ɵɵadvance(1);
                 core.ɵɵtextInterpolate1(" ", ctx.label, "\n");
             } }, styles: [".button-link{box-sizing:border-box;width:100%;display:block;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:.25rem;text-decoration:none;text-align:center}.button-link--secondary,.button-link:hover{background:var(--color-orange-400)}.button-link--secondary:hover{background:var(--color-blue-400)}"], encapsulation: 3, changeDetection: 0 });
@@ -196,17 +219,14 @@
     var _c0$1 = ["*"];
     var CardComponent = /** @class */ (function () {
         function CardComponent() {
-            this.overlay = false;
         }
         /** @nocollapse */ CardComponent.ɵfac = function CardComponent_Factory(t) { return new (t || CardComponent)(); };
-        /** @nocollapse */ CardComponent.ɵcmp = core.ɵɵdefineComponent({ type: CardComponent, selectors: [["lib-card"]], inputs: { overlay: "overlay" }, ngContentSelectors: _c0$1, decls: 2, vars: 2, consts: [[1, "card"]], template: function CardComponent_Template(rf, ctx) { if (rf & 1) {
+        /** @nocollapse */ CardComponent.ɵcmp = core.ɵɵdefineComponent({ type: CardComponent, selectors: [["lib-card"]], ngContentSelectors: _c0$1, decls: 2, vars: 0, consts: [[1, "card"]], template: function CardComponent_Template(rf, ctx) { if (rf & 1) {
                 core.ɵɵprojectionDef();
                 core.ɵɵelementStart(0, "div", 0);
                 core.ɵɵprojection(1);
                 core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵclassProp("card--overlay", ctx.overlay);
-            } }, styles: [".card{box-sizing:border-box;position:relative;background:var(--color-white);border-radius:.25rem;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;height:100%}.card--overlay .card__body:hover .card__overlay{display:flex}"], encapsulation: 3, changeDetection: 0 });
+            } }, styles: [".card{box-sizing:border-box;position:relative;background:var(--color-white);border-radius:.25rem;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;height:100%}"], encapsulation: 3, changeDetection: 0 });
         return CardComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(CardComponent, [{
@@ -218,9 +238,7 @@
                     changeDetection: core.ChangeDetectionStrategy.OnPush,
                     encapsulation: core.ViewEncapsulation.ShadowDom
                 }]
-        }], null, { overlay: [{
-                type: core.Input
-            }] }); })();
+        }], null, null); })();
 
     var CardModule = /** @class */ (function () {
         function CardModule() {
@@ -248,14 +266,17 @@
     var _c0$2 = ["*"];
     var CardBodyComponent = /** @class */ (function () {
         function CardBodyComponent() {
+            this.overlay = false;
         }
         /** @nocollapse */ CardBodyComponent.ɵfac = function CardBodyComponent_Factory(t) { return new (t || CardBodyComponent)(); };
-        /** @nocollapse */ CardBodyComponent.ɵcmp = core.ɵɵdefineComponent({ type: CardBodyComponent, selectors: [["lib-card-body"]], ngContentSelectors: _c0$2, decls: 2, vars: 0, consts: [[1, "card__body"]], template: function CardBodyComponent_Template(rf, ctx) { if (rf & 1) {
+        /** @nocollapse */ CardBodyComponent.ɵcmp = core.ɵɵdefineComponent({ type: CardBodyComponent, selectors: [["lib-card-body"]], inputs: { overlay: "overlay" }, ngContentSelectors: _c0$2, decls: 2, vars: 2, consts: [[1, "card__body"]], template: function CardBodyComponent_Template(rf, ctx) { if (rf & 1) {
                 core.ɵɵprojectionDef();
                 core.ɵɵelementStart(0, "div", 0);
                 core.ɵɵprojection(1);
                 core.ɵɵelementEnd();
-            } }, styles: [""], encapsulation: 3, changeDetection: 0 });
+            } if (rf & 2) {
+                core.ɵɵclassProp("card__body--overlay", ctx.overlay);
+            } }, styles: [".card__body:hover .card__overlay{display:flex}"], encapsulation: 3, changeDetection: 0 });
         return CardBodyComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(CardBodyComponent, [{
@@ -267,7 +288,9 @@
                     changeDetection: core.ChangeDetectionStrategy.OnPush,
                     encapsulation: core.ViewEncapsulation.ShadowDom
                 }]
-        }], null, null); })();
+        }], null, { overlay: [{
+                type: core.Input
+            }] }); })();
 
     var CardBodyModule = /** @class */ (function () {
         function CardBodyModule() {
@@ -537,7 +560,7 @@
                 core.ɵɵelementStart(0, "div", 0);
                 core.ɵɵprojection(1);
                 core.ɵɵelementEnd();
-            } }, styles: [".card__footer{align-self:flex-end;padding:0 1.5rem 1.5rem 1rem}"], encapsulation: 3, changeDetection: 0 });
+            } }, styles: [".card__footer{align-self:flex-end;padding:0 1rem 1rem}"], encapsulation: 3, changeDetection: 0 });
         return CardFooterComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(CardFooterComponent, [{

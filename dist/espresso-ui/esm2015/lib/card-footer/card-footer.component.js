@@ -9,7 +9,7 @@ export class CardFooterComponent {
         i0.ɵɵelementStart(0, "div", 0);
         i0.ɵɵprojection(1);
         i0.ɵɵelementEnd();
-    } }, styles: [".card__footer{align-self:flex-end;padding:0 1.5rem 1.5rem 1rem}"], encapsulation: 3, changeDetection: 0 });
+    } }, styles: [".card__footer{align-self:flex-end;padding:0 1rem 1rem}"], encapsulation: 3, changeDetection: 0 });
 /*@__PURE__*/ (function () { i0.ɵsetClassMetadata(CardFooterComponent, [{
         type: Component,
         args: [{
