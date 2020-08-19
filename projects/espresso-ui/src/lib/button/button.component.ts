@@ -5,6 +5,6 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
     templateUrl: './button.component.html',
     styleUrls: ['./button.component.less'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    // encapsulation: ViewEncapsulation.ShadowDom
+    encapsulation: ViewEncapsulation.ShadowDom
 })
 export class ButtonComponent {}

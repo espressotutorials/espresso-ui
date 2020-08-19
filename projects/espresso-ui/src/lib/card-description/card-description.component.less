@@ -1,0 +1,45 @@
+:host {}
+
+.card__description {
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+
+    ul,
+    ol,
+    p,
+    a {
+        font-size: .875rem;
+    }
+
+    ul,
+    ol,
+    p {
+        color: var(--color-gray-400);
+    }
+
+    a {
+        color: var(--color-blue-400);
+
+        &:hover {
+            color: var(--color-orange-400);
+        }
+    }
+
+    ul,
+    ol {
+        padding-left: 1rem;
+
+        li {
+            margin-bottom: .25rem;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}

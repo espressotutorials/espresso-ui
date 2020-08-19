@@ -1,6 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '../projects/espresso-ui/src/global-vars';
+@import '../projects/espresso-ui/src/variables';
+
+*,
+::before,
+::after {
+    box-sizing: border-box; /* 1 */
+    border-width: 0; /* 2 */
+    border-style: solid; /* 2 */
+    border-color: #f9f9f9; /* 2 */
+}
+
+html {
+    /* font-family: sans-serif; */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+    font-feature-settings: "pnum";
+    font-variant-numeric: proportional-nums;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
 
 body {
     margin: 0;

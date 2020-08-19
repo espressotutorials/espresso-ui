@@ -1,14 +1,14 @@
-:host {
-    display: block;
-    width: max-content;
-}
+:host {}
 
 .card {
+    box-sizing: border-box;
     position: relative;
     background: var(--color-white);
     border-radius: .25rem;
     box-shadow: var(--shadow-lg);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: flex-start;
+    height: 100%;
 }

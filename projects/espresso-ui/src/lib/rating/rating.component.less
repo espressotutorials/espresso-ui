@@ -1,0 +1,21 @@
+:host {}
+
+.rating {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .fa-star,
+    .fa-star-half-empty,
+    .fa-star-o {
+        color: var(--color-yellow-400);
+
+        svg {
+            display: block;
+            width: 22px;
+            height: 22px;
+        }
+    }
+}

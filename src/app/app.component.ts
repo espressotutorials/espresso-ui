@@ -12,4 +12,8 @@ export class AppComponent {
     onButtonClick() {
         console.log('click');
     }
+
+    onFavoriteChange(event: any) {
+        console.log(event);
+    }
 }

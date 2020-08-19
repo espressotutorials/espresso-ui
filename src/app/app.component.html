@@ -1,11 +1,92 @@
-<div class="card">
-    There are three simple components from two component libraries on the card
+<div class="container">
 
-    <lib-button class="component" (click)="onButtonClick()">
-        button component
-    </lib-button>
+    <div class="flex flex-row flex-wrap">
 
-    <lib-card class="component">
-        card component
-    </lib-card>
+        <div class="w-1/4">
+            <lib-button class="component" (click)="onButtonClick()">
+                button component
+            </lib-button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="block w-full">
+        <div class="flex flex-row flex-wrap">
+
+            <div class="w-1/4 px-8">
+                <lib-card class="component">
+                    <lib-card-image>
+                        <img class="w-full h-auto" src="../assets/images/601.jpg" alt="test">
+                    </lib-card-image>
+                    <lib-card-content>
+                        <lib-card-time slot="time">Veröffentlicht: 08.2020</lib-card-time>
+                        <lib-card-title slot="title">Fiori Launchpad Designer</lib-card-title>
+                        <lib-card-author slot="author">Max Mustermann</lib-card-author>
+                    </lib-card-content>
+                    <lib-card-footer class="mt-auto">
+                        <lib-button (click)="onButtonClick()">
+                            Read more
+                        </lib-button>
+                    </lib-card-footer>
+                </lib-card>
+            </div>
+
+            <div class="w-1/4 px-8">
+                <lib-card class="component">
+                    <lib-card-body [overlay]="true">
+                        <lib-card-image>
+                            <img class="w-full h-auto" src="../assets/images/601.jpg" alt="test">
+                        </lib-card-image>
+                        <lib-card-content>
+                            <lib-card-time slot="time">Veröffentlicht: 08.2020</lib-card-time>
+                            <lib-card-title slot="title">Fiori Launchpad Designer</lib-card-title>
+                            <lib-card-author slot="author">Max Mustermann</lib-card-author>
+                        </lib-card-content>
+                        <lib-card-overlay>
+                            <lib-card-meta [type]="'book'" [typeTitle]="'Buch'" [duration]="'234 Seiten'" [level]="'Anfänger'"></lib-card-meta>
+                            <lib-card-description>
+                                <ul><li>Kacheln / Kachelkataloge / Kachelgruppen</li><li>Launchpad Designer</li><li>Kataloge finden</li><li>Kataloge kopieren und anpassen</li><li>Gruppen anlegen</li><li>Katalog und Gruppe einer Rolle zuweisen</li></ul>
+                            </lib-card-description>
+                            <div class="mt-auto mb-4">
+                                <lib-button-link [url]="'#'" [title]="'Link zu #'" [label]="'Buch lesen'"></lib-button-link>
+                            </div>
+                            <div class="mt-auto">
+                                <lib-button-link [url]="'#'" [title]="'Link zu #'" [label]="'Mehr erfahren'" [secondary]="true"></lib-button-link>
+                            </div>
+                        </lib-card-overlay>
+                    </lib-card-body>
+                    <lib-card-footer class="mt-auto">
+                        <div class="flex flex-row flex-wrap items-center justify-between">
+                            <lib-rating [rating]="4"></lib-rating>
+                            <lib-button-favorite [favorite]="true"></lib-button-favorite>
+                        </div>
+                    </lib-card-footer>
+                </lib-card>
+            </div>
+
+            <div class="w-1/4 px-8">
+                <lib-card class="component">
+                    <lib-card-image>
+                        <img class="w-full h-auto" src="../assets/images/601.jpg" alt="test">
+                    </lib-card-image>
+                    <lib-card-content>
+                        <lib-card-time slot="time">Veröffentlicht: 08.2020</lib-card-time>
+                        <lib-card-title slot="title">Fiori Launchpad Designer</lib-card-title>
+                        <lib-card-author slot="author">Max Mustermann</lib-card-author>
+                    </lib-card-content>
+                    <lib-card-footer class="mt-auto">
+                        <div class="flex flex-row flex-wrap items-center justify-between">
+                            <lib-rating [rating]="4.5"></lib-rating>
+                            <lib-button-favorite [favorite]="false" (favoriteChange)="onFavoriteChange($event)"></lib-button-favorite>
+                        </div>
+                    </lib-card-footer>
+                </lib-card>
+            </div>
+
+        </div>
+    </div>
+
 </div>

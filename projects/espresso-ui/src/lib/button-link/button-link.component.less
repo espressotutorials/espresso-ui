@@ -1,0 +1,30 @@
+:host {}
+
+.button-link {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    appearance: none;
+    border: 0;
+    background: var(--color-blue-400);
+    color: var(--color-white);
+    font-size: .875rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        background: var(--color-orange-400);
+    }
+}
+
+.button-link--secondary {
+    background: var(--color-orange-400);
+
+    &:hover {
+        background: var(--color-blue-400);
+    }
+}

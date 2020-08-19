@@ -1,0 +1,30 @@
+:host {}
+
+.button-favorite {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    color: var(--color-gray-500);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--color-red-400);
+    }
+
+    svg {
+        width: 26px;
+        height: 26px;
+        display: block;
+        fill: currentColor;
+        pointer-events: none;
+    }
+}
+
+.button-favorite--active {
+    color: var(--color-red-400);
+}
