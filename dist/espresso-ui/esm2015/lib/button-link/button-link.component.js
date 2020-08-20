@@ -12,7 +12,7 @@ export class ButtonLinkComponent {
         i0.ɵɵproperty("href", ctx.url, i0.ɵɵsanitizeUrl)("title", ctx.title)("target", ctx.target)("rel", ctx.rel);
         i0.ɵɵadvance(1);
         i0.ɵɵtextInterpolate1(" ", ctx.label, "\n");
-    } }, styles: [".button-link{box-sizing:border-box;width:100%;display:block;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:.25rem;text-decoration:none;text-align:center}.button-link--secondary,.button-link:hover{background:var(--color-orange-400)}.button-link--secondary:hover{background:var(--color-blue-400)}"], encapsulation: 3, changeDetection: 0 });
+    } }, styles: [".button-link{box-sizing:border-box;width:100%;display:block;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:var(--radius);text-decoration:none;text-align:center}.button-link--secondary,.button-link:hover{background:var(--color-orange-400)}.button-link--secondary:hover{background:var(--color-blue-400)}"], encapsulation: 3, changeDetection: 0 });
 /*@__PURE__*/ (function () { i0.ɵsetClassMetadata(ButtonLinkComponent, [{
         type: Component,
         args: [{

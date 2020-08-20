@@ -21,7 +21,7 @@
                 core.ɵɵelementEnd();
             } if (rf & 2) {
                 core.ɵɵclassProp("button--secondary", ctx.secondary);
-            } }, styles: [".button{width:100%;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:.25rem}.button--secondary,.button:hover{background:var(--color-orange-400)}.button--secondary:hover{background:var(--color-blue-400)}"], encapsulation: 3, changeDetection: 0 });
+            } }, styles: [".button{width:100%;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:var(--radius)}.button--secondary,.button:hover{background:var(--color-orange-400)}.button--secondary:hover{background:var(--color-blue-400)}"], encapsulation: 3, changeDetection: 0 });
         return ButtonComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ButtonComponent, [{
@@ -167,7 +167,7 @@
                 core.ɵɵproperty("href", ctx.url, core.ɵɵsanitizeUrl)("title", ctx.title)("target", ctx.target)("rel", ctx.rel);
                 core.ɵɵadvance(1);
                 core.ɵɵtextInterpolate1(" ", ctx.label, "\n");
-            } }, styles: [".button-link{box-sizing:border-box;width:100%;display:block;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:.25rem;text-decoration:none;text-align:center}.button-link--secondary,.button-link:hover{background:var(--color-orange-400)}.button-link--secondary:hover{background:var(--color-blue-400)}"], encapsulation: 3, changeDetection: 0 });
+            } }, styles: [".button-link{box-sizing:border-box;width:100%;display:block;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;background:var(--color-blue-400);color:var(--color-white);font-size:.875rem;font-weight:700;cursor:pointer;padding:.5rem 1rem;border-radius:var(--radius);text-decoration:none;text-align:center}.button-link--secondary,.button-link:hover{background:var(--color-orange-400)}.button-link--secondary:hover{background:var(--color-blue-400)}"], encapsulation: 3, changeDetection: 0 });
         return ButtonLinkComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ButtonLinkComponent, [{
@@ -226,7 +226,7 @@
                 core.ɵɵelementStart(0, "div", 0);
                 core.ɵɵprojection(1);
                 core.ɵɵelementEnd();
-            } }, styles: [".card{box-sizing:border-box;position:relative;background:var(--color-white);border-radius:.25rem;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;height:100%}"], encapsulation: 3, changeDetection: 0 });
+            } }, styles: [".card{box-sizing:border-box;position:relative;background:var(--color-white);border-radius:var(--radius);box-shadow:var(--shadow-lg);display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;height:100%}"], encapsulation: 3, changeDetection: 0 });
         return CardComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(CardComponent, [{
@@ -513,7 +513,7 @@
                 core.ɵɵelementStart(0, "p", 0);
                 core.ɵɵprojection(1);
                 core.ɵɵelementEnd();
-            } }, styles: [".card__author{box-sizing:border-box;color:var(--color-gray-400);font-size:.875rem;margin:.5rem 0}"], encapsulation: 3, changeDetection: 0 });
+            } }, styles: [".card__author{box-sizing:border-box;color:var(--color-gray-300);font-size:.75rem;margin:.5rem 0}"], encapsulation: 3, changeDetection: 0 });
         return CardAuthorComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(CardAuthorComponent, [{
@@ -607,7 +607,7 @@
                 core.ɵɵelementStart(0, "div", 0);
                 core.ɵɵprojection(1);
                 core.ɵɵelementEnd();
-            } }, styles: [".card__overlay[_ngcontent-%COMP%]{box-sizing:border-box;display:none;z-index:10;position:absolute;bottom:0;left:0;right:0;box-shadow:var(--shadow-lg);padding:.75rem;min-height:100%;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;border-radius:.25rem;background-color:var(--color-gray-100)}"] });
+            } }, styles: [".card__overlay[_ngcontent-%COMP%]{box-sizing:border-box;display:none;z-index:10;position:absolute;bottom:0;left:0;right:0;box-shadow:var(--shadow-lg);padding:.75rem;min-height:100%;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;border-radius:var(--radius);background-color:var(--color-gray-100)}"] });
         return CardOverlayComponent;
     }());
     /*@__PURE__*/ (function () { core.ɵsetClassMetadata(CardOverlayComponent, [{
@@ -929,6 +929,372 @@
                 }]
         }], null, null); })();
 
+    function AuthorComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+        core.ɵɵelementContainerStart(0);
+        core.ɵɵelementStart(1, "div", 5);
+        core.ɵɵelement(2, "img", 6);
+        core.ɵɵelementEnd();
+        core.ɵɵelementContainerEnd();
+    } if (rf & 2) {
+        var ctx_r0 = core.ɵɵnextContext();
+        core.ɵɵadvance(2);
+        core.ɵɵproperty("src", ctx_r0.image, core.ɵɵsanitizeUrl)("alt", ctx_r0.name);
+    } }
+    function AuthorComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
+        core.ɵɵelementContainerStart(0);
+        core.ɵɵelementStart(1, "h4");
+        core.ɵɵtext(2);
+        core.ɵɵelementEnd();
+        core.ɵɵelementContainerEnd();
+    } if (rf & 2) {
+        var ctx_r1 = core.ɵɵnextContext();
+        core.ɵɵadvance(2);
+        core.ɵɵtextInterpolate(ctx_r1.position);
+    } }
+    var AuthorComponent = /** @class */ (function () {
+        function AuthorComponent() {
+        }
+        /** @nocollapse */ AuthorComponent.ɵfac = function AuthorComponent_Factory(t) { return new (t || AuthorComponent)(); };
+        /** @nocollapse */ AuthorComponent.ɵcmp = core.ɵɵdefineComponent({ type: AuthorComponent, selectors: [["lib-author"]], inputs: { name: "name", text: "text", image: "image", position: "position" }, decls: 8, vars: 6, consts: [[1, "author"], [1, "author__meta"], [4, "ngIf"], [1, "author__meta__info"], [1, "author__description", 3, "innerHTML"], [1, "author__meta__image"], [3, "src", "alt"]], template: function AuthorComponent_Template(rf, ctx) { if (rf & 1) {
+                core.ɵɵelementStart(0, "div", 0);
+                core.ɵɵelementStart(1, "div", 1);
+                core.ɵɵtemplate(2, AuthorComponent_ng_container_2_Template, 3, 2, "ng-container", 2);
+                core.ɵɵelementStart(3, "div", 3);
+                core.ɵɵelementStart(4, "h3");
+                core.ɵɵtext(5);
+                core.ɵɵelementEnd();
+                core.ɵɵtemplate(6, AuthorComponent_ng_container_6_Template, 3, 1, "ng-container", 2);
+                core.ɵɵelementEnd();
+                core.ɵɵelementEnd();
+                core.ɵɵelement(7, "div", 4);
+                core.ɵɵelementEnd();
+            } if (rf & 2) {
+                core.ɵɵadvance(1);
+                core.ɵɵclassProp("author__meta--no-image", !ctx.image);
+                core.ɵɵadvance(1);
+                core.ɵɵproperty("ngIf", ctx.image);
+                core.ɵɵadvance(3);
+                core.ɵɵtextInterpolate(ctx.name);
+                core.ɵɵadvance(1);
+                core.ɵɵproperty("ngIf", ctx.position);
+                core.ɵɵadvance(1);
+                core.ɵɵproperty("innerHTML", ctx.text, core.ɵɵsanitizeHtml);
+            } }, directives: [common.NgIf], styles: [".author{width:100%;box-sizing:border-box;padding:1rem}.author .author__meta{width:100%;box-sizing:border-box;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;margin-bottom:1rem}.author .author__meta .author__meta__image{box-sizing:border-box;width:90px;height:90px;margin:0}.author .author__meta .author__meta__image img{width:90px;height:90px;-o-object-position:center;object-position:center;-o-object-fit:cover;object-fit:cover;border-radius:var(--radius-full)}.author .author__meta .author__meta__info{box-sizing:border-box;width:100%;padding-left:0}.author .author__meta .author__meta__info h3{box-sizing:border-box;color:var(--color-gray-500);font-size:1rem;margin:0 0 .25rem;font-weight:400}.author .author__meta .author__meta__info h4{box-sizing:border-box;color:var(--color-gray-300);font-size:.75rem;margin:0;font-weight:400}@media (min-width:680px){.author .author__meta .author__meta__info{width:calc(100% - 96px);padding-left:.75rem}.author .author__meta--no-image .author__meta__info{width:100%;padding-left:0}}.author .author__description{box-sizing:border-box;font-size:.875rem;line-height:1.3;color:var(--color-gray-400)}.author .author__description a{color:var(--color-blue-400)}.author .author__description a:hover{color:var(--color-orange-400)}.author .author__description ol,.author .author__description ul{padding-left:1rem}.author .author__description ol li,.author .author__description ul li{margin-bottom:.25rem}.author .author__description ol li:last-child,.author .author__description ul li:last-child,.author .author__description:last-child{margin-bottom:0}"], encapsulation: 3, changeDetection: 0 });
+        return AuthorComponent;
+    }());
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(AuthorComponent, [{
+            type: core.Component,
+            args: [{
+                    selector: 'lib-author',
+                    templateUrl: './author.component.html',
+                    styleUrls: ['./author.component.less'],
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                    encapsulation: core.ViewEncapsulation.ShadowDom
+                }]
+        }], null, { name: [{
+                type: core.Input
+            }], text: [{
+                type: core.Input
+            }], image: [{
+                type: core.Input
+            }], position: [{
+                type: core.Input
+            }] }); })();
+
+    var AuthorModule = /** @class */ (function () {
+        function AuthorModule() {
+        }
+        /** @nocollapse */ AuthorModule.ɵmod = core.ɵɵdefineNgModule({ type: AuthorModule });
+        /** @nocollapse */ AuthorModule.ɵinj = core.ɵɵdefineInjector({ factory: function AuthorModule_Factory(t) { return new (t || AuthorModule)(); }, imports: [[
+                    common.CommonModule
+                ]] });
+        return AuthorModule;
+    }());
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(AuthorModule, { declarations: [AuthorComponent], imports: [common.CommonModule], exports: [AuthorComponent] }); })();
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(AuthorModule, [{
+            type: core.NgModule,
+            args: [{
+                    declarations: [AuthorComponent],
+                    imports: [
+                        common.CommonModule
+                    ],
+                    exports: [
+                        AuthorComponent
+                    ]
+                }]
+        }], null, null); })();
+
+    var ReviewComponent = /** @class */ (function () {
+        function ReviewComponent() {
+        }
+        /** @nocollapse */ ReviewComponent.ɵfac = function ReviewComponent_Factory(t) { return new (t || ReviewComponent)(); };
+        /** @nocollapse */ ReviewComponent.ɵcmp = core.ɵɵdefineComponent({ type: ReviewComponent, selectors: [["lib-review"]], decls: 5, vars: 0, consts: [[1, "review"], ["name", "rating"], ["name", "title"], ["name", "description"], ["name", "author"]], template: function ReviewComponent_Template(rf, ctx) { if (rf & 1) {
+                core.ɵɵelementStart(0, "div", 0);
+                core.ɵɵelement(1, "slot", 1);
+                core.ɵɵelement(2, "slot", 2);
+                core.ɵɵelement(3, "slot", 3);
+                core.ɵɵelement(4, "slot", 4);
+                core.ɵɵelementEnd();
+            } }, styles: [".review{width:100%;box-sizing:border-box;padding:1rem}"], encapsulation: 3, changeDetection: 0 });
+        return ReviewComponent;
+    }());
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ReviewComponent, [{
+            type: core.Component,
+            args: [{
+                    selector: 'lib-review',
+                    templateUrl: './review.component.html',
+                    styleUrls: ['./review.component.less'],
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                    encapsulation: core.ViewEncapsulation.ShadowDom
+                }]
+        }], null, null); })();
+
+    var ReviewModule = /** @class */ (function () {
+        function ReviewModule() {
+        }
+        /** @nocollapse */ ReviewModule.ɵmod = core.ɵɵdefineNgModule({ type: ReviewModule });
+        /** @nocollapse */ ReviewModule.ɵinj = core.ɵɵdefineInjector({ factory: function ReviewModule_Factory(t) { return new (t || ReviewModule)(); }, imports: [[
+                    common.CommonModule
+                ]] });
+        return ReviewModule;
+    }());
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(ReviewModule, { declarations: [ReviewComponent], imports: [common.CommonModule], exports: [ReviewComponent] }); })();
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ReviewModule, [{
+            type: core.NgModule,
+            args: [{
+                    declarations: [ReviewComponent],
+                    imports: [
+                        common.CommonModule
+                    ],
+                    exports: [
+                        ReviewComponent
+                    ]
+                }]
+        }], null, null); })();
+
+    var _c0$a = ["*"];
+    var ReviewDescriptionComponent = /** @class */ (function () {
+        function ReviewDescriptionComponent() {
+        }
+        /** @nocollapse */ ReviewDescriptionComponent.ɵfac = function ReviewDescriptionComponent_Factory(t) { return new (t || ReviewDescriptionComponent)(); };
+        /** @nocollapse */ ReviewDescriptionComponent.ɵcmp = core.ɵɵdefineComponent({ type: ReviewDescriptionComponent, selectors: [["lib-review-description"]], ngContentSelectors: _c0$a, decls: 2, vars: 0, consts: [[1, "review__description"]], template: function ReviewDescriptionComponent_Template(rf, ctx) { if (rf & 1) {
+                core.ɵɵprojectionDef();
+                core.ɵɵelementStart(0, "div", 0);
+                core.ɵɵprojection(1);
+                core.ɵɵelementEnd();
+            } }, styles: [".review__description{width:100%;box-sizing:border-box;font-size:.875rem;line-height:1.3;color:var(--color-gray-400)}.review__description a{color:var(--color-blue-400)}.review__description a:hover{color:var(--color-orange-400)}.review__description ol,.review__description ul{padding-left:1rem}.review__description ol li,.review__description ul li{margin-bottom:.25rem}.review__description ol li:last-child,.review__description ul li:last-child,.review__description:last-child{margin-bottom:0}"], encapsulation: 3, changeDetection: 0 });
+        return ReviewDescriptionComponent;
+    }());
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ReviewDescriptionComponent, [{
+            type: core.Component,
+            args: [{
+                    selector: 'lib-review-description',
+                    templateUrl: './review-description.component.html',
+                    styleUrls: ['./review-description.component.less'],
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                    encapsulation: core.ViewEncapsulation.ShadowDom
+                }]
+        }], null, null); })();
+
+    var ReviewDescriptionModule = /** @class */ (function () {
+        function ReviewDescriptionModule() {
+        }
+        /** @nocollapse */ ReviewDescriptionModule.ɵmod = core.ɵɵdefineNgModule({ type: ReviewDescriptionModule });
+        /** @nocollapse */ ReviewDescriptionModule.ɵinj = core.ɵɵdefineInjector({ factory: function ReviewDescriptionModule_Factory(t) { return new (t || ReviewDescriptionModule)(); }, imports: [[
+                    common.CommonModule
+                ]] });
+        return ReviewDescriptionModule;
+    }());
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(ReviewDescriptionModule, { declarations: [ReviewDescriptionComponent], imports: [common.CommonModule], exports: [ReviewDescriptionComponent] }); })();
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ReviewDescriptionModule, [{
+            type: core.NgModule,
+            args: [{
+                    declarations: [ReviewDescriptionComponent],
+                    imports: [
+                        common.CommonModule
+                    ],
+                    exports: [
+                        ReviewDescriptionComponent
+                    ]
+                }]
+        }], null, null); })();
+
+    var _c0$b = ["*"];
+    var ReviewTitleComponent = /** @class */ (function () {
+        function ReviewTitleComponent() {
+        }
+        /** @nocollapse */ ReviewTitleComponent.ɵfac = function ReviewTitleComponent_Factory(t) { return new (t || ReviewTitleComponent)(); };
+        /** @nocollapse */ ReviewTitleComponent.ɵcmp = core.ɵɵdefineComponent({ type: ReviewTitleComponent, selectors: [["lib-review-title"]], ngContentSelectors: _c0$b, decls: 2, vars: 0, consts: [[1, "review__title"]], template: function ReviewTitleComponent_Template(rf, ctx) { if (rf & 1) {
+                core.ɵɵprojectionDef();
+                core.ɵɵelementStart(0, "h3", 0);
+                core.ɵɵprojection(1);
+                core.ɵɵelementEnd();
+            } }, styles: [".review__title{width:100%;box-sizing:border-box;color:var(--color-gray-500);font-size:1.15rem;margin:1rem 0 .5rem;font-weight:400}"], encapsulation: 3, changeDetection: 0 });
+        return ReviewTitleComponent;
+    }());
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ReviewTitleComponent, [{
+            type: core.Component,
+            args: [{
+                    selector: 'lib-review-title',
+                    templateUrl: './review-title.component.html',
+                    styleUrls: ['./review-title.component.less'],
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                    encapsulation: core.ViewEncapsulation.ShadowDom
+                }]
+        }], null, null); })();
+
+    var ReviewTitleModule = /** @class */ (function () {
+        function ReviewTitleModule() {
+        }
+        /** @nocollapse */ ReviewTitleModule.ɵmod = core.ɵɵdefineNgModule({ type: ReviewTitleModule });
+        /** @nocollapse */ ReviewTitleModule.ɵinj = core.ɵɵdefineInjector({ factory: function ReviewTitleModule_Factory(t) { return new (t || ReviewTitleModule)(); }, imports: [[
+                    common.CommonModule
+                ]] });
+        return ReviewTitleModule;
+    }());
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(ReviewTitleModule, { declarations: [ReviewTitleComponent], imports: [common.CommonModule], exports: [ReviewTitleComponent] }); })();
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ReviewTitleModule, [{
+            type: core.NgModule,
+            args: [{
+                    declarations: [ReviewTitleComponent],
+                    imports: [
+                        common.CommonModule
+                    ],
+                    exports: [
+                        ReviewTitleComponent
+                    ]
+                }]
+        }], null, null); })();
+
+    var _c0$c = ["*"];
+    var ReviewAuthorComponent = /** @class */ (function () {
+        function ReviewAuthorComponent() {
+        }
+        /** @nocollapse */ ReviewAuthorComponent.ɵfac = function ReviewAuthorComponent_Factory(t) { return new (t || ReviewAuthorComponent)(); };
+        /** @nocollapse */ ReviewAuthorComponent.ɵcmp = core.ɵɵdefineComponent({ type: ReviewAuthorComponent, selectors: [["lib-review-author"]], ngContentSelectors: _c0$c, decls: 2, vars: 0, consts: [[1, "review__author"]], template: function ReviewAuthorComponent_Template(rf, ctx) { if (rf & 1) {
+                core.ɵɵprojectionDef();
+                core.ɵɵelementStart(0, "p", 0);
+                core.ɵɵprojection(1);
+                core.ɵɵelementEnd();
+            } }, styles: [".review__author{width:100%;box-sizing:border-box;color:var(--color-gray-300);font-size:.75rem;margin:.5rem 0 0;font-weight:400}"], encapsulation: 3, changeDetection: 0 });
+        return ReviewAuthorComponent;
+    }());
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ReviewAuthorComponent, [{
+            type: core.Component,
+            args: [{
+                    selector: 'lib-review-author',
+                    templateUrl: './review-author.component.html',
+                    styleUrls: ['./review-author.component.less'],
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                    encapsulation: core.ViewEncapsulation.ShadowDom
+                }]
+        }], null, null); })();
+
+    var ReviewAuthorModule = /** @class */ (function () {
+        function ReviewAuthorModule() {
+        }
+        /** @nocollapse */ ReviewAuthorModule.ɵmod = core.ɵɵdefineNgModule({ type: ReviewAuthorModule });
+        /** @nocollapse */ ReviewAuthorModule.ɵinj = core.ɵɵdefineInjector({ factory: function ReviewAuthorModule_Factory(t) { return new (t || ReviewAuthorModule)(); }, imports: [[
+                    common.CommonModule
+                ]] });
+        return ReviewAuthorModule;
+    }());
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(ReviewAuthorModule, { declarations: [ReviewAuthorComponent], imports: [common.CommonModule], exports: [ReviewAuthorComponent] }); })();
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(ReviewAuthorModule, [{
+            type: core.NgModule,
+            args: [{
+                    declarations: [ReviewAuthorComponent],
+                    imports: [
+                        common.CommonModule
+                    ],
+                    exports: [
+                        ReviewAuthorComponent
+                    ]
+                }]
+        }], null, null); })();
+
+    var TestimonialComponent = /** @class */ (function () {
+        function TestimonialComponent() {
+        }
+        /** @nocollapse */ TestimonialComponent.ɵfac = function TestimonialComponent_Factory(t) { return new (t || TestimonialComponent)(); };
+        /** @nocollapse */ TestimonialComponent.ɵcmp = core.ɵɵdefineComponent({ type: TestimonialComponent, selectors: [["lib-testimonial"]], inputs: { name: "name", text: "text", image: "image", position: "position" }, decls: 13, vars: 5, consts: [[1, "testimonial"], [1, "testimonial__icon"], ["xmlns", "http://www.w3.org/2000/svg", "fill", "currentColor", "viewBox", "0 0 975.036 975.036"], ["d", "M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"], [1, "testimonial__text", 3, "innerHTML"], [1, "testimonial__meta"], [1, "testimonial__meta__image"], [3, "src", "alt"], [1, "testimonial__meta__info"]], template: function TestimonialComponent_Template(rf, ctx) { if (rf & 1) {
+                core.ɵɵelementStart(0, "div", 0);
+                core.ɵɵelementStart(1, "div", 1);
+                core.ɵɵnamespaceSVG();
+                core.ɵɵelementStart(2, "svg", 2);
+                core.ɵɵelement(3, "path", 3);
+                core.ɵɵelementEnd();
+                core.ɵɵelementEnd();
+                core.ɵɵnamespaceHTML();
+                core.ɵɵelement(4, "div", 4);
+                core.ɵɵelementStart(5, "div", 5);
+                core.ɵɵelementStart(6, "div", 6);
+                core.ɵɵelement(7, "img", 7);
+                core.ɵɵelementEnd();
+                core.ɵɵelementStart(8, "div", 8);
+                core.ɵɵelementStart(9, "h3");
+                core.ɵɵtext(10);
+                core.ɵɵelementEnd();
+                core.ɵɵelementStart(11, "h4");
+                core.ɵɵtext(12);
+                core.ɵɵelementEnd();
+                core.ɵɵelementEnd();
+                core.ɵɵelementEnd();
+                core.ɵɵelementEnd();
+            } if (rf & 2) {
+                core.ɵɵadvance(4);
+                core.ɵɵproperty("innerHTML", ctx.text, core.ɵɵsanitizeHtml);
+                core.ɵɵadvance(3);
+                core.ɵɵproperty("src", ctx.image, core.ɵɵsanitizeUrl)("alt", ctx.name);
+                core.ɵɵadvance(3);
+                core.ɵɵtextInterpolate(ctx.name);
+                core.ɵɵadvance(2);
+                core.ɵɵtextInterpolate(ctx.position);
+            } }, styles: [".testimonial[_ngcontent-%COMP%]{width:100%;box-sizing:border-box;padding:1rem}.testimonial[_ngcontent-%COMP%]   .testimonial__icon[_ngcontent-%COMP%], .testimonial[_ngcontent-%COMP%]   .testimonial__icon[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{box-sizing:border-box;display:block;width:1.25rem;height:1.25rem;color:var(--color-blue-400);margin-bottom:1rem}.testimonial[_ngcontent-%COMP%]   .testimonial__meta[_ngcontent-%COMP%]{width:100%;box-sizing:border-box;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;margin-top:1rem;margin-bottom:0}.testimonial[_ngcontent-%COMP%]   .testimonial__meta[_ngcontent-%COMP%]   .testimonial__meta__image[_ngcontent-%COMP%]{box-sizing:border-box;width:90px;height:90px;margin:0}.testimonial[_ngcontent-%COMP%]   .testimonial__meta[_ngcontent-%COMP%]   .testimonial__meta__image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]{width:90px;height:90px;-o-object-position:center;object-position:center;-o-object-fit:cover;object-fit:cover;border-radius:var(--radius-full)}.testimonial[_ngcontent-%COMP%]   .testimonial__meta[_ngcontent-%COMP%]   .testimonial__meta__info[_ngcontent-%COMP%]{box-sizing:border-box;width:100%;padding-left:0}@media (min-width:680px){.testimonial[_ngcontent-%COMP%]   .testimonial__meta[_ngcontent-%COMP%]   .testimonial__meta__info[_ngcontent-%COMP%]{width:calc(100% - 96px);padding-left:.75rem}}.testimonial[_ngcontent-%COMP%]   .testimonial__meta[_ngcontent-%COMP%]   .testimonial__meta__info[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%]{box-sizing:border-box;color:var(--color-gray-500);font-size:1rem;margin:0 0 .25rem;font-weight:400}.testimonial[_ngcontent-%COMP%]   .testimonial__meta[_ngcontent-%COMP%]   .testimonial__meta__info[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%]{box-sizing:border-box;color:var(--color-gray-300);font-size:.75rem;margin:0;font-weight:400}.testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]{box-sizing:border-box;font-size:1rem;line-height:1.625;color:var(--color-gray-500)}.testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{color:var(--color-blue-400)}.testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover{color:var(--color-orange-400)}.testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%], .testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]{padding-left:1rem}.testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%], .testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]{margin-bottom:.25rem}.testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]   ol[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:last-child, .testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]:last-child, .testimonial[_ngcontent-%COMP%]   .testimonial__text[_ngcontent-%COMP%]:last-child{margin-bottom:0}"] });
+        return TestimonialComponent;
+    }());
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(TestimonialComponent, [{
+            type: core.Component,
+            args: [{
+                    selector: 'lib-testimonial',
+                    templateUrl: './testimonial.component.html',
+                    styleUrls: ['./testimonial.component.less']
+                }]
+        }], null, { name: [{
+                type: core.Input
+            }], text: [{
+                type: core.Input
+            }], image: [{
+                type: core.Input
+            }], position: [{
+                type: core.Input
+            }] }); })();
+
+    var TestimonialModule = /** @class */ (function () {
+        function TestimonialModule() {
+        }
+        /** @nocollapse */ TestimonialModule.ɵmod = core.ɵɵdefineNgModule({ type: TestimonialModule });
+        /** @nocollapse */ TestimonialModule.ɵinj = core.ɵɵdefineInjector({ factory: function TestimonialModule_Factory(t) { return new (t || TestimonialModule)(); }, imports: [[
+                    common.CommonModule
+                ]] });
+        return TestimonialModule;
+    }());
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(TestimonialModule, { declarations: [TestimonialComponent], imports: [common.CommonModule], exports: [TestimonialComponent] }); })();
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(TestimonialModule, [{
+            type: core.NgModule,
+            args: [{
+                    declarations: [TestimonialComponent],
+                    imports: [
+                        common.CommonModule
+                    ],
+                    exports: [
+                        TestimonialComponent
+                    ]
+                }]
+        }], null, null); })();
+
+    exports.AuthorComponent = AuthorComponent;
+    exports.AuthorModule = AuthorModule;
     exports.ButtonComponent = ButtonComponent;
     exports.ButtonFavoriteComponent = ButtonFavoriteComponent;
     exports.ButtonFavoriteModule = ButtonFavoriteModule;
@@ -959,6 +1325,16 @@
     exports.CardTitleModule = CardTitleModule;
     exports.RatingComponent = RatingComponent;
     exports.RatingModule = RatingModule;
+    exports.ReviewAuthorComponent = ReviewAuthorComponent;
+    exports.ReviewAuthorModule = ReviewAuthorModule;
+    exports.ReviewComponent = ReviewComponent;
+    exports.ReviewDescriptionComponent = ReviewDescriptionComponent;
+    exports.ReviewDescriptionModule = ReviewDescriptionModule;
+    exports.ReviewModule = ReviewModule;
+    exports.ReviewTitleComponent = ReviewTitleComponent;
+    exports.ReviewTitleModule = ReviewTitleModule;
+    exports.TestimonialComponent = TestimonialComponent;
+    exports.TestimonialModule = TestimonialModule;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

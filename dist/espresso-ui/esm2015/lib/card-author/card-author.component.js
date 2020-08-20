@@ -9,7 +9,7 @@ export class CardAuthorComponent {
         i0.ɵɵelementStart(0, "p", 0);
         i0.ɵɵprojection(1);
         i0.ɵɵelementEnd();
-    } }, styles: [".card__author{box-sizing:border-box;color:var(--color-gray-400);font-size:.875rem;margin:.5rem 0}"], encapsulation: 3, changeDetection: 0 });
+    } }, styles: [".card__author{box-sizing:border-box;color:var(--color-gray-300);font-size:.75rem;margin:.5rem 0}"], encapsulation: 3, changeDetection: 0 });
 /*@__PURE__*/ (function () { i0.ɵsetClassMetadata(CardAuthorComponent, [{
         type: Component,
         args: [{

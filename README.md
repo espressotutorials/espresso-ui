@@ -30,6 +30,12 @@ The espresso-ui library offers a set of customizable native angular- and web com
 - `button-link`
 - `button-favorite`
 - `rating`
+- `author`
+- `review`
+- `review-title`
+- `review-descriptio`
+- `review-author`
+- `testimonial`
 
 ## Available Web Components
 
@@ -38,4 +44,4 @@ The espresso-ui library offers a set of customizable native angular- and web com
 
 ## ToDo
 
-- `author` `review` `sharing` `testimonial` `description` `information` `title` `dropdown-select` `card-horizontal` `cover` `section` `logo` `accordion` …
+- `sharing` `description` `information` `title` `dropdown-select` `card-horizontal` `cover` `section` `logo` `accordion` …

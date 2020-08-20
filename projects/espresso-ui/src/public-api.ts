@@ -51,3 +51,24 @@ export * from './lib/card-description/card-description.module';
 // Rating component
 export * from './lib/rating/rating.component';
 export * from './lib/rating/rating.module';
+
+// Author component
+export * from './lib/author/author.component';
+export * from './lib/author/author.module';
+
+// Review components
+export * from './lib/review/review.component';
+export * from './lib/review/review.module';
+
+export * from './lib/review-description/review-description.component';
+export * from './lib/review-description/review-description.module';
+
+export * from './lib/review-title/review-title.component';
+export * from './lib/review-title/review-title.module';
+
+export * from './lib/review-author/review-author.component';
+export * from './lib/review-author/review-author.module';
+
+// Testimonial components
+export * from './lib/testimonial/testimonial.component';
+export * from './lib/testimonial/testimonial.module';

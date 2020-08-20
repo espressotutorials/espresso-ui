@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent} from './app.component';
-import { ButtonModule, ButtonLinkModule, CardAuthorModule, CardModule, CardTitleModule, CardTimeModule, CardOverlayModule, CardDescriptionModule, CardFooterModule, ButtonFavoriteModule, CardContentModule, CardImageModule, RatingModule, CardMetaModule, CardBodyModule } from 'projects/espresso-ui/src/public-api';
+import { ButtonModule, AuthorModule, ReviewDescriptionModule, ReviewModule, ReviewTitleModule, ReviewAuthorModule, ButtonLinkModule, CardAuthorModule, CardModule, CardTitleModule, CardTimeModule, CardOverlayModule, CardDescriptionModule, CardFooterModule, ButtonFavoriteModule, CardContentModule, CardImageModule, RatingModule, CardMetaModule, CardBodyModule } from 'projects/espresso-ui/src/public-api';
+import { TestimonialModule } from 'espresso-ui';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,13 @@ import { ButtonModule, ButtonLinkModule, CardAuthorModule, CardModule, CardTitle
         CardMetaModule,
         CardDescriptionModule,
         ButtonLinkModule,
-        CardBodyModule
+        CardBodyModule,
+        AuthorModule,
+        ReviewModule,
+        ReviewTitleModule,
+        ReviewDescriptionModule,
+        ReviewAuthorModule,
+        TestimonialModule
     ],
     providers: [],
     bootstrap: [

@@ -9,7 +9,7 @@ export class CardOverlayComponent {
         i0.ɵɵelementStart(0, "div", 0);
         i0.ɵɵprojection(1);
         i0.ɵɵelementEnd();
-    } }, styles: [".card__overlay[_ngcontent-%COMP%]{box-sizing:border-box;display:none;z-index:10;position:absolute;bottom:0;left:0;right:0;box-shadow:var(--shadow-lg);padding:.75rem;min-height:100%;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;border-radius:.25rem;background-color:var(--color-gray-100)}"] });
+    } }, styles: [".card__overlay[_ngcontent-%COMP%]{box-sizing:border-box;display:none;z-index:10;position:absolute;bottom:0;left:0;right:0;box-shadow:var(--shadow-lg);padding:.75rem;min-height:100%;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;border-radius:var(--radius);background-color:var(--color-gray-100)}"] });
 /*@__PURE__*/ (function () { i0.ɵsetClassMetadata(CardOverlayComponent, [{
         type: Component,
         args: [{

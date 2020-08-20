@@ -1,0 +1,16 @@
+<div class="author">
+    <div class="author__meta" [class.author__meta--no-image]="!image">
+        <ng-container *ngIf="image">
+            <div class="author__meta__image">
+                <img [src]="image" [alt]="name">
+            </div>
+        </ng-container>
+        <div class="author__meta__info">
+            <h3>{{name}}</h3>
+            <ng-container *ngIf="position">
+                <h4>{{position}}</h4>
+            </ng-container>
+        </div>
+    </div>
+    <div class="author__description" [innerHTML]="text"></div>
+</div>

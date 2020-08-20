@@ -9,7 +9,7 @@ export class CardComponent {
         i0.ɵɵelementStart(0, "div", 0);
         i0.ɵɵprojection(1);
         i0.ɵɵelementEnd();
-    } }, styles: [".card{box-sizing:border-box;position:relative;background:var(--color-white);border-radius:.25rem;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;height:100%}"], encapsulation: 3, changeDetection: 0 });
+    } }, styles: [".card{box-sizing:border-box;position:relative;background:var(--color-white);border-radius:var(--radius);box-shadow:var(--shadow-lg);display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;height:100%}"], encapsulation: 3, changeDetection: 0 });
 /*@__PURE__*/ (function () { i0.ɵsetClassMetadata(CardComponent, [{
         type: Component,
         args: [{
