@@ -1065,4 +1065,4 @@ var TestimonialModule = /** @class */ (function () {
  */
 
 export { AuthorComponent, AuthorModule, ButtonComponent, ButtonFavoriteComponent, ButtonFavoriteModule, ButtonLinkComponent, ButtonLinkModule, ButtonModule, CardAuthorComponent, CardAuthorModule, CardBodyComponent, CardBodyModule, CardComponent, CardContentComponent, CardContentModule, CardDescriptionComponent, CardDescriptionModule, CardFooterComponent, CardFooterModule, CardImageComponent, CardImageModule, CardMetaComponent, CardMetaModule, CardModule, CardOverlayComponent, CardOverlayModule, CardTimeComponent, CardTimeModule, CardTitleComponent, CardTitleModule, RatingComponent, RatingModule, ReviewAuthorComponent, ReviewAuthorModule, ReviewComponent, ReviewDescriptionComponent, ReviewDescriptionModule, ReviewModule, ReviewTitleComponent, ReviewTitleModule, TestimonialComponent, TestimonialModule };
-//# sourceMappingURL=espresso-ui.js.map
+//# sourceMappingURL=espressotutorialsgmbh-espresso-ui.js.map

@@ -1,18 +1,18 @@
 {
   "name": "@espressotutorialsgmbh/espresso-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^10.0.10",
     "@angular/core": "^10.0.10"
   },
-  "main": "bundles/espresso-ui.umd.js",
-  "module": "fesm5/espresso-ui.js",
-  "es2015": "fesm2015/espresso-ui.js",
-  "esm5": "esm5/espresso-ui.js",
-  "esm2015": "esm2015/espresso-ui.js",
-  "fesm5": "fesm5/espresso-ui.js",
-  "fesm2015": "fesm2015/espresso-ui.js",
-  "typings": "espresso-ui.d.ts",
+  "main": "bundles/espressotutorialsgmbh-espresso-ui.umd.js",
+  "module": "fesm5/espressotutorialsgmbh-espresso-ui.js",
+  "es2015": "fesm2015/espressotutorialsgmbh-espresso-ui.js",
+  "esm5": "esm5/espressotutorialsgmbh-espresso-ui.js",
+  "esm2015": "esm2015/espressotutorialsgmbh-espresso-ui.js",
+  "fesm5": "fesm5/espressotutorialsgmbh-espresso-ui.js",
+  "fesm2015": "fesm2015/espressotutorialsgmbh-espresso-ui.js",
+  "typings": "espressotutorialsgmbh-espresso-ui.d.ts",
   "sideEffects": false,
   "dependencies": {
     "tslib": "^2.0.0"
@@ -37,8 +37,5 @@
     "url": "https://github.com/espressotutorials/espresso-ui/issues"
   },
   "homepage": "https://github.com/espressotutorials/espresso-ui#readme",
-  "metadata": "espresso-ui.metadata.json",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  "metadata": "espressotutorialsgmbh-espresso-ui.metadata.json"
 }

@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('espresso-ui', ['exports', '@angular/core', '@angular/common'], factory) :
-    (global = global || self, factory(global['espresso-ui'] = {}, global.ng.core, global.ng.common));
+    typeof define === 'function' && define.amd ? define('@espressotutorialsgmbh/espresso-ui', ['exports', '@angular/core', '@angular/common'], factory) :
+    (global = global || self, factory((global.espressotutorialsgmbh = global.espressotutorialsgmbh || {}, global.espressotutorialsgmbh['espresso-ui'] = {}), global.ng.core, global.ng.common));
 }(this, (function (exports, core, common) { 'use strict';
 
     /**
@@ -1103,4 +1103,4 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=espresso-ui.umd.js.map
+//# sourceMappingURL=espressotutorialsgmbh-espresso-ui.umd.js.map
