@@ -1,28 +1,25 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TestimonialComponent } from './testimonial.component';
-import * as i0 from "@angular/core";
 var TestimonialModule = /** @class */ (function () {
     function TestimonialModule() {
     }
-    /** @nocollapse */ TestimonialModule.ɵmod = i0.ɵɵdefineNgModule({ type: TestimonialModule });
-    /** @nocollapse */ TestimonialModule.ɵinj = i0.ɵɵdefineInjector({ factory: function TestimonialModule_Factory(t) { return new (t || TestimonialModule)(); }, imports: [[
-                CommonModule
-            ]] });
+    TestimonialModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [TestimonialComponent],
+                    imports: [
+                        CommonModule
+                    ],
+                    exports: [
+                        TestimonialComponent
+                    ]
+                },] }
+    ];
     return TestimonialModule;
 }());
 export { TestimonialModule };
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(TestimonialModule, { declarations: [TestimonialComponent], imports: [CommonModule], exports: [TestimonialComponent] }); })();
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(TestimonialModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [TestimonialComponent],
-                imports: [
-                    CommonModule
-                ],
-                exports: [
-                    TestimonialComponent
-                ]
-            }]
-    }], null, null); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdGltb25pYWwubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vZXNwcmVzc28tdWkvIiwic291cmNlcyI6WyJsaWIvdGVzdGltb25pYWwvdGVzdGltb25pYWwubW9kdWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDekMsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLGlCQUFpQixDQUFDO0FBQy9DLE9BQU8sRUFBRSxvQkFBb0IsRUFBRSxNQUFNLHlCQUF5QixDQUFDOztBQUkvRDtJQUFBO0tBU2tDOzRFQUFyQixpQkFBaUI7d0lBQWpCLGlCQUFpQixrQkFQbkI7Z0JBQ0wsWUFBWTthQUNmOzRCQVZIO0NBZWtDLEFBVGxDLElBU2tDO1NBQXJCLGlCQUFpQjt3RkFBakIsaUJBQWlCLG1CQVJiLG9CQUFvQixhQUUvQixZQUFZLGFBR1osb0JBQW9CO2tEQUdiLGlCQUFpQjtjQVQ3QixRQUFRO2VBQUM7Z0JBQ1IsWUFBWSxFQUFFLENBQUMsb0JBQW9CLENBQUM7Z0JBQ3BDLE9BQU8sRUFBRTtvQkFDTCxZQUFZO2lCQUNmO2dCQUNELE9BQU8sRUFBRTtvQkFDTCxvQkFBb0I7aUJBQ3ZCO2FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBOZ01vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHsgQ29tbW9uTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29tbW9uJztcbmltcG9ydCB7IFRlc3RpbW9uaWFsQ29tcG9uZW50IH0gZnJvbSAnLi90ZXN0aW1vbmlhbC5jb21wb25lbnQnO1xuXG5cblxuQE5nTW9kdWxlKHtcbiAgZGVjbGFyYXRpb25zOiBbVGVzdGltb25pYWxDb21wb25lbnRdLFxuICBpbXBvcnRzOiBbXG4gICAgICBDb21tb25Nb2R1bGVcbiAgXSxcbiAgZXhwb3J0czogW1xuICAgICAgVGVzdGltb25pYWxDb21wb25lbnRcbiAgXVxufSlcbmV4cG9ydCBjbGFzcyBUZXN0aW1vbmlhbE1vZHVsZSB7IH1cbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdGltb25pYWwubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vZXNwcmVzc28tdWkvIiwic291cmNlcyI6WyJsaWIvdGVzdGltb25pYWwvdGVzdGltb25pYWwubW9kdWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSxPQUFPLEVBQUUsUUFBUSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQ3pDLE9BQU8sRUFBRSxZQUFZLEVBQUUsTUFBTSxpQkFBaUIsQ0FBQztBQUMvQyxPQUFPLEVBQUUsb0JBQW9CLEVBQUUsTUFBTSx5QkFBeUIsQ0FBQztBQUkvRDtJQUFBO0lBU2lDLENBQUM7O2dCQVRqQyxRQUFRLFNBQUM7b0JBQ1IsWUFBWSxFQUFFLENBQUMsb0JBQW9CLENBQUM7b0JBQ3BDLE9BQU8sRUFBRTt3QkFDTCxZQUFZO3FCQUNmO29CQUNELE9BQU8sRUFBRTt3QkFDTCxvQkFBb0I7cUJBQ3ZCO2lCQUNGOztJQUNnQyx3QkFBQztDQUFBLEFBVGxDLElBU2tDO1NBQXJCLGlCQUFpQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IE5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQgeyBDb21tb25Nb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jb21tb24nO1xuaW1wb3J0IHsgVGVzdGltb25pYWxDb21wb25lbnQgfSBmcm9tICcuL3Rlc3RpbW9uaWFsLmNvbXBvbmVudCc7XG5cblxuXG5ATmdNb2R1bGUoe1xuICBkZWNsYXJhdGlvbnM6IFtUZXN0aW1vbmlhbENvbXBvbmVudF0sXG4gIGltcG9ydHM6IFtcbiAgICAgIENvbW1vbk1vZHVsZVxuICBdLFxuICBleHBvcnRzOiBbXG4gICAgICBUZXN0aW1vbmlhbENvbXBvbmVudFxuICBdXG59KVxuZXhwb3J0IGNsYXNzIFRlc3RpbW9uaWFsTW9kdWxlIHsgfVxuIl19

@@ -1,5 +1,5 @@
 {
-  "name": "espresso-ui",
+  "name": "@espressotutorialsgmbh/espresso-ui",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^10.0.10",
@@ -17,7 +17,28 @@
   "dependencies": {
     "tslib": "^2.0.0"
   },
+  "description": "The espresso-ui library offers a set of customizable web components written with Angular & TypeScript. To show the Espresso Tutorials corporate identity across projects.",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/espressotutorials/espresso-ui.git"
+  },
+  "keywords": [
+    "angular",
+    "typescript",
+    "espressotutorials",
+    "webcomponents"
+  ],
+  "author": "Espresso Tutorials GmbH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/espressotutorials/espresso-ui/issues"
+  },
+  "homepage": "https://github.com/espressotutorials/espresso-ui#readme",
+  "metadata": "espresso-ui.metadata.json",
   "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

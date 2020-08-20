@@ -1,23 +1,17 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import * as i0 from "@angular/core";
-const _c0 = ["*"];
 export class CardFooterComponent {
 }
-/** @nocollapse */ CardFooterComponent.ɵfac = function CardFooterComponent_Factory(t) { return new (t || CardFooterComponent)(); };
-/** @nocollapse */ CardFooterComponent.ɵcmp = i0.ɵɵdefineComponent({ type: CardFooterComponent, selectors: [["lib-card-footer"]], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "card__footer"]], template: function CardFooterComponent_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵprojectionDef();
-        i0.ɵɵelementStart(0, "div", 0);
-        i0.ɵɵprojection(1);
-        i0.ɵɵelementEnd();
-    } }, styles: [".card__footer{align-self:flex-end;padding:0 1rem 1rem}"], encapsulation: 3, changeDetection: 0 });
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(CardFooterComponent, [{
-        type: Component,
-        args: [{
+CardFooterComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'lib-card-footer',
-                templateUrl: './card-footer.component.html',
-                styleUrls: ['./card-footer.component.less'],
+                template: "<div class=\"card__footer\">\n    <ng-content></ng-content>\n</div>\n",
                 changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.ShadowDom
-            }]
-    }], null, null); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2FyZC1mb290ZXIuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6Im5nOi8vZXNwcmVzc28tdWkvIiwic291cmNlcyI6WyJsaWIvY2FyZC1mb290ZXIvY2FyZC1mb290ZXIuY29tcG9uZW50LnRzIiwibGliL2NhcmQtZm9vdGVyL2NhcmQtZm9vdGVyLmNvbXBvbmVudC5odG1sIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSx1QkFBdUIsRUFBRSxTQUFTLEVBQUUsaUJBQWlCLEVBQUUsTUFBTSxlQUFlLENBQUM7OztBQVN0RixNQUFNLE9BQU8sbUJBQW1COzt5R0FBbkIsbUJBQW1COzJFQUFuQixtQkFBbUI7O1FDVGhDLDhCQUNJO1FBQUEsa0JBQVk7UUFDaEIsaUJBQU07O2tERE9PLG1CQUFtQjtjQVAvQixTQUFTO2VBQUM7Z0JBQ1QsUUFBUSxFQUFFLGlCQUFpQjtnQkFDM0IsV0FBVyxFQUFFLDhCQUE4QjtnQkFDM0MsU0FBUyxFQUFFLENBQUMsOEJBQThCLENBQUM7Z0JBQzNDLGVBQWUsRUFBRSx1QkFBdUIsQ0FBQyxNQUFNO2dCQUMvQyxhQUFhLEVBQUUsaUJBQWlCLENBQUMsU0FBUzthQUMzQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENoYW5nZURldGVjdGlvblN0cmF0ZWd5LCBDb21wb25lbnQsIFZpZXdFbmNhcHN1bGF0aW9uIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogJ2xpYi1jYXJkLWZvb3RlcicsXG4gIHRlbXBsYXRlVXJsOiAnLi9jYXJkLWZvb3Rlci5jb21wb25lbnQuaHRtbCcsXG4gIHN0eWxlVXJsczogWycuL2NhcmQtZm9vdGVyLmNvbXBvbmVudC5sZXNzJ10sXG4gIGNoYW5nZURldGVjdGlvbjogQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3kuT25QdXNoLFxuICBlbmNhcHN1bGF0aW9uOiBWaWV3RW5jYXBzdWxhdGlvbi5TaGFkb3dEb21cbn0pXG5leHBvcnQgY2xhc3MgQ2FyZEZvb3RlckNvbXBvbmVudCB7fVxuIiwiPGRpdiBjbGFzcz1cImNhcmRfX2Zvb3RlclwiPlxuICAgIDxuZy1jb250ZW50PjwvbmctY29udGVudD5cbjwvZGl2PlxuIl19
+                encapsulation: ViewEncapsulation.ShadowDom,
+                styles: [".card__footer{align-self:flex-end;padding:0 1rem 1rem}"]
+            }] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2FyZC1mb290ZXIuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6Im5nOi8vZXNwcmVzc28tdWkvIiwic291cmNlcyI6WyJsaWIvY2FyZC1mb290ZXIvY2FyZC1mb290ZXIuY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSxPQUFPLEVBQUUsdUJBQXVCLEVBQUUsU0FBUyxFQUFFLGlCQUFpQixFQUFFLE1BQU0sZUFBZSxDQUFDO0FBU3RGLE1BQU0sT0FBTyxtQkFBbUI7OztZQVAvQixTQUFTLFNBQUM7Z0JBQ1QsUUFBUSxFQUFFLGlCQUFpQjtnQkFDM0IsaUZBQTJDO2dCQUUzQyxlQUFlLEVBQUUsdUJBQXVCLENBQUMsTUFBTTtnQkFDL0MsYUFBYSxFQUFFLGlCQUFpQixDQUFDLFNBQVM7O2FBQzNDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3ksIENvbXBvbmVudCwgVmlld0VuY2Fwc3VsYXRpb24gfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiAnbGliLWNhcmQtZm9vdGVyJyxcbiAgdGVtcGxhdGVVcmw6ICcuL2NhcmQtZm9vdGVyLmNvbXBvbmVudC5odG1sJyxcbiAgc3R5bGVVcmxzOiBbJy4vY2FyZC1mb290ZXIuY29tcG9uZW50Lmxlc3MnXSxcbiAgY2hhbmdlRGV0ZWN0aW9uOiBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneS5PblB1c2gsXG4gIGVuY2Fwc3VsYXRpb246IFZpZXdFbmNhcHN1bGF0aW9uLlNoYWRvd0RvbVxufSlcbmV4cG9ydCBjbGFzcyBDYXJkRm9vdGVyQ29tcG9uZW50IHt9XG4iXX0=
