@@ -12,7 +12,7 @@ var CardImageComponent = /** @class */ (function () {
                     template: "<div class=\"card__image\">\n    <ng-content></ng-content>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".card__image{box-sizing:border-box;display:block;width:100%;height:auto;margin:0 auto;border-top-left-radius:.25rem;border-top-right-radius:.25rem;overflow:hidden}.card__image img{vertical-align:bottom}"]
+                    styles: [".card__image{box-sizing:border-box;display:block;width:100%;height:auto;margin:0 auto;border-top-left-radius:.25rem;border-top-right-radius:.25rem;overflow:hidden}.card__image img{vertical-align:bottom;box-sizing:border-box;width:100%}"]
                 }] }
     ];
     return CardImageComponent;
