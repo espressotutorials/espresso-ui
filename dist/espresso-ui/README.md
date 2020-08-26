@@ -12,9 +12,6 @@ The espresso-ui library offers a set of customizable native angular- and web com
 -   `ng serve` — start an Angular demo app with Angular components
 -   `ng build espresso-ui` — build native Angular components
 -   `npm run build:elements` — build single JS file Web Components from Angular components
--   `npm run readme` — copy readme to dist folder
--   `npm run styles` — copy global styles to dist folder
--   `npm run build:elements` — build single JS file Web Components from Angular components
 
 ## Available Angular Components
 
