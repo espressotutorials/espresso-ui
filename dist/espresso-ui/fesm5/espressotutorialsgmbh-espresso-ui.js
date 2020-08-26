@@ -893,7 +893,7 @@ var ReviewDescriptionComponent = /** @class */ (function () {
                     template: "<div class=\"review__description\">\n    <ng-content></ng-content>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".review__description{width:100%;box-sizing:border-box;font-size:.875rem;line-height:1.3;color:var(--et-ui-color-gray-400)}.review__description a{color:var(--et-ui-color-blue-400)}.review__description a:hover{color:var(--et-ui-color-orange-400)}.review__description ol,.review__description ul{padding-left:1rem}.review__description ol li,.review__description ul li{margin-bottom:.25rem}.review__description ol li:last-child,.review__description ul li:last-child,.review__description:last-child{margin-bottom:0}"]
+                    styles: [".review__description{width:100%;box-sizing:border-box;font-size:1rem;line-height:1.4;color:var(--et-ui-color-gray-400)}.review__description a{color:var(--et-ui-color-blue-400)}.review__description a:hover{color:var(--et-ui-color-orange-400)}.review__description ol,.review__description ul{padding-left:1rem}.review__description ol li,.review__description ul li{margin-bottom:.25rem}.review__description ol li:last-child,.review__description ul li:last-child,.review__description:last-child{margin-bottom:0}"]
                 }] }
     ];
     return ReviewDescriptionComponent;
