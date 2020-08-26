@@ -15,7 +15,7 @@ CardTitleComponent.decorators = [
     { type: Component, args: [{
                 selector: 'lib-card-title',
                 template: "<h3 class=\"card__title\">\n    <ng-content></ng-content>\n</h3>\n",
-                styles: [".card__title{box-sizing:border-box;color:var(--color-gray-500);font-size:1.25rem;margin:0 0 .5rem;font-weight:400}"]
+                styles: [".card__title{box-sizing:border-box;color:var(--et-ui-color-gray-500);font-size:1.25rem;margin:0 0 .5rem;font-weight:400}"]
             }] }
 ];
 /** @nocollapse */

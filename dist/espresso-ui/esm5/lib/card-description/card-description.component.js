@@ -12,7 +12,7 @@ var CardDescriptionComponent = /** @class */ (function () {
                     template: "<div class=\"card__description\">\n    <ng-content></ng-content>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".card__description{box-sizing:border-box;padding-bottom:1rem}.card__description a,.card__description ol,.card__description p,.card__description ul{font-size:.875rem}.card__description ol,.card__description p,.card__description ul{color:var(--color-gray-400)}.card__description a{color:var(--color-blue-400)}.card__description a:hover{color:var(--color-orange-400)}.card__description ol,.card__description ul{padding-left:1rem}.card__description ol li,.card__description ul li{margin-bottom:.25rem}.card__description ol li:last-child,.card__description ul li:last-child,.card__description:last-child{margin-bottom:0}"]
+                    styles: [".card__description{box-sizing:border-box;padding-bottom:1rem}.card__description a,.card__description ol,.card__description p,.card__description ul{font-size:.875rem}.card__description ol,.card__description p,.card__description ul{color:var(--et-ui-color-gray-400)}.card__description a{color:var(--et-ui-color-blue-400)}.card__description a:hover{color:var(--et-ui-color-orange-400)}.card__description ol,.card__description ul{padding-left:1rem}.card__description ol li,.card__description ul li{margin-bottom:.25rem}.card__description ol li:last-child,.card__description ul li:last-child,.card__description:last-child{margin-bottom:0}"]
                 }] }
     ];
     return CardDescriptionComponent;

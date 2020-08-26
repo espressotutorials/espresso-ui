@@ -1,7 +1,6 @@
 :root {
   --et-ui-color-black: #000;
   --et-ui-color-white: #fff;
-
   --et-ui-color-gray-100: #f5f5f5;
   --et-ui-color-gray-150: #e7e7e7;
   --et-ui-color-gray-200: #D9D9D9;
@@ -9,7 +8,6 @@
   --et-ui-color-gray-300: #7e7e7e;
   --et-ui-color-gray-400: #505763;
   --et-ui-color-gray-500: #1B1E27;
-
   --et-ui-color-blue-50: #ecf6fd;
   --et-ui-color-blue-100: #e2eefa;
   --et-ui-color-blue-200: #cee9fc;
@@ -17,31 +15,24 @@
   --et-ui-color-blue-400: #33A8E0;
   --et-ui-color-blue-500: #47b1e3;
   --et-ui-color-blue-600: #445864;
-
   --et-ui-color-red-300: #f25454;
   --et-ui-color-red-400: #f04141;
   --et-ui-color-red-500: #d33939;
-
   --et-ui-color-orange-300: #f49c1a;
   --et-ui-color-orange-400: #F39100;
   --et-ui-color-orange-500: #d68000;
-
   --et-ui-color-green-300: #28e070;
   --et-ui-color-green-400: #10dc60;
   --et-ui-color-green-500: #0ec254;
-
   --et-ui-color-yellow-300: #ffd31a;
   --et-ui-color-yellow-400: #ffce00;
   --et-ui-color-yellow-500: #e0b500;
-
-  --et-ui-font-sans: system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-
+  --et-ui-font-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --et-ui-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --et-ui-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --et-ui-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --et-ui-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --et-ui-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-
   --et-ui-radius: .25rem;
   --et-ui-radius-full: 9999px;
 }

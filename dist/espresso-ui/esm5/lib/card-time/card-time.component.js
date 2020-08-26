@@ -12,7 +12,7 @@ var CardTimeComponent = /** @class */ (function () {
                     template: "<time class=\"card__time\">\n    <ng-content></ng-content>\n</time>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".card__time{box-sizing:border-box;display:block;font-size:.75rem;color:var(--color-gray-400);margin-bottom:.25rem}"]
+                    styles: [".card__time{box-sizing:border-box;display:block;font-size:.75rem;color:var(--et-ui-color-gray-400);margin-bottom:.25rem}"]
                 }] }
     ];
     return CardTimeComponent;

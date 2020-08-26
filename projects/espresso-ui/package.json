@@ -1,6 +1,6 @@
 {
   "name": "@espressotutorialsgmbh/espresso-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^10.0.10",
     "@angular/core": "^10.0.10"
@@ -15,7 +15,7 @@
   "typings": "espresso-ui.d.ts",
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^2.0.0",
+    "tslib": "^2.0.0"
   },
   "description": "The espresso-ui library offers a set of customizable web components written with Angular & TypeScript. To show the Espresso Tutorials corporate identity across projects.",
   "directories": {
