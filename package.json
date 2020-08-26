@@ -19,7 +19,7 @@
     "storybook": "yarn docs:json && start-storybook -p 6006",
     "build-storybook": "yarn docs:json && build-storybook",
     "readme": "cpx \"README.md\" \"dist/espresso-ui\"",
-    "build-ui-styles": "lessc-glob ./projects/espresso-ui/src/variables.less ./dist/espresso-ui/style"
+    "styles": "lessc-glob ./projects/espresso-ui/src/variables.less ./dist/espresso-ui/style"
   },
   "dependencies": {
     "@angular-builders/custom-webpack": "^10.0.0",
