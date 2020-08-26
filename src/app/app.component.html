@@ -16,7 +16,7 @@
     <div class="block w-full">
         <div class="flex flex-row flex-wrap">
 
-            <div class="w-1/4 px-8">
+            <div class="w-1/4 px-8 mb-8">
                 <lib-card class="component">
                     <lib-card-image>
                         <img class="w-full h-auto" src="../assets/images/601.jpg" alt="test">
@@ -34,7 +34,27 @@
                 </lib-card>
             </div>
 
-            <div class="w-1/4 px-8">
+            <div class="w-1/4 px-8 mb-8">
+                <lib-card class="component">
+                    <lib-card-image>
+                        <img class="w-full h-auto" src="../assets/images/601.jpg" alt="test">
+                    </lib-card-image>
+                    <lib-card-content>
+                        <lib-card-info slot="info">120 Seiten</lib-card-info>
+                        <lib-card-author slot="author">
+                            <p>Max Mustermann</p>
+                            <p>Max Mustermann</p>
+                        </lib-card-author>
+                    </lib-card-content>
+                    <lib-card-footer class="mt-auto">
+                        <lib-button (click)="onButtonClick()">
+                            Read more
+                        </lib-button>
+                    </lib-card-footer>
+                </lib-card>
+            </div>
+
+            <div class="w-1/4 px-8 mb-8">
                 <lib-card class="component">
                     <lib-card-body [overlay]="true">
                         <lib-card-image>
@@ -67,7 +87,7 @@
                 </lib-card>
             </div>
 
-            <div class="w-1/4 px-8">
+            <div class="w-1/4 px-8 mb-8">
                 <lib-card class="component">
                     <lib-card-image>
                         <img class="w-full h-auto" src="../assets/images/601.jpg" alt="test">
@@ -86,7 +106,7 @@
                 </lib-card>
             </div>
 
-            <div class="w-1/4 px-8">
+            <div class="w-1/4 px-8 mb-8">
                 <lib-card class="component">
                     <lib-card-body [overlay]="true">
                         <lib-card-image>

@@ -33,6 +33,9 @@ export * from './lib/card-time/card-time.module';
 export * from './lib/card-title/card-title.component';
 export * from './lib/card-title/card-title.module';
 
+export * from './lib/card-info/card-info.component';
+export * from './lib/card-info/card-info.module';
+
 export * from './lib/card-author/card-author.component';
 export * from './lib/card-author/card-author.module';
 

@@ -12,7 +12,7 @@ var CardAuthorComponent = /** @class */ (function () {
                     template: "<p class=\"card__author\">\n    <ng-content></ng-content>\n</p>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".card__author{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0}"]
+                    styles: [".card__author{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0}.card__author p{margin-top:0;margin-bottom:.5rem;color:var(--et-ui-color-gray-300);font-size:.75rem}.card__author p:last-child{margin-bottom:0}"]
                 }] }
     ];
     return CardAuthorComponent;

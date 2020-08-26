@@ -309,7 +309,7 @@
         CardContentComponent.decorators = [
             { type: core.Component, args: [{
                         selector: 'lib-card-content',
-                        template: "<div class=\"card__content\">\n    <slot name=\"time\"></slot>\n    <slot name=\"title\"></slot>\n    <slot name=\"author\"></slot>\n</div>\n",
+                        template: "<div class=\"card__content\">\n    <slot name=\"time\"></slot>\n    <slot name=\"title\"></slot>\n    <slot name=\"info\"></slot>\n    <slot name=\"author\"></slot>\n</div>\n",
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         encapsulation: core.ViewEncapsulation.ShadowDom,
                         styles: [".card__content{box-sizing:border-box;padding:1rem;width:100%}"]
@@ -471,6 +471,46 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
+    var CardInfoComponent = /** @class */ (function () {
+        function CardInfoComponent() {
+        }
+        CardInfoComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'lib-card-info',
+                        template: "<div class=\"card__info\">\n    <ng-content></ng-content>\n</div>\n",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.ShadowDom,
+                        styles: [".card__info{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0}"]
+                    }] }
+        ];
+        return CardInfoComponent;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var CardInfoModule = /** @class */ (function () {
+        function CardInfoModule() {
+        }
+        CardInfoModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [CardInfoComponent],
+                        imports: [
+                            common.CommonModule
+                        ],
+                        exports: [
+                            CardInfoComponent
+                        ]
+                    },] }
+        ];
+        return CardInfoModule;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
+     * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var CardAuthorComponent = /** @class */ (function () {
         function CardAuthorComponent() {
         }
@@ -480,7 +520,7 @@
                         template: "<p class=\"card__author\">\n    <ng-content></ng-content>\n</p>\n",
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         encapsulation: core.ViewEncapsulation.ShadowDom,
-                        styles: [".card__author{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0}"]
+                        styles: [".card__author{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0}.card__author p{margin-top:0;margin-bottom:.5rem;color:var(--et-ui-color-gray-300);font-size:.75rem}.card__author p:last-child{margin-bottom:0}"]
                     }] }
         ];
         return CardAuthorComponent;
@@ -1078,6 +1118,8 @@
     exports.CardFooterModule = CardFooterModule;
     exports.CardImageComponent = CardImageComponent;
     exports.CardImageModule = CardImageModule;
+    exports.CardInfoComponent = CardInfoComponent;
+    exports.CardInfoModule = CardInfoModule;
     exports.CardMetaComponent = CardMetaComponent;
     exports.CardMetaModule = CardMetaModule;
     exports.CardModule = CardModule;

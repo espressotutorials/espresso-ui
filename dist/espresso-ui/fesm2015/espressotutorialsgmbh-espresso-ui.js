@@ -274,7 +274,7 @@ class CardContentComponent {
 CardContentComponent.decorators = [
     { type: Component, args: [{
                 selector: 'lib-card-content',
-                template: "<div class=\"card__content\">\n    <slot name=\"time\"></slot>\n    <slot name=\"title\"></slot>\n    <slot name=\"author\"></slot>\n</div>\n",
+                template: "<div class=\"card__content\">\n    <slot name=\"time\"></slot>\n    <slot name=\"title\"></slot>\n    <slot name=\"info\"></slot>\n    <slot name=\"author\"></slot>\n</div>\n",
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.ShadowDom,
                 styles: [".card__content{box-sizing:border-box;padding:1rem;width:100%}"]
@@ -411,6 +411,40 @@ CardTitleModule.decorators = [
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+class CardInfoComponent {
+}
+CardInfoComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'lib-card-info',
+                template: "<div class=\"card__info\">\n    <ng-content></ng-content>\n</div>\n",
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.ShadowDom,
+                styles: [".card__info{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0}"]
+            }] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class CardInfoModule {
+}
+CardInfoModule.decorators = [
+    { type: NgModule, args: [{
+                declarations: [CardInfoComponent],
+                imports: [
+                    CommonModule
+                ],
+                exports: [
+                    CardInfoComponent
+                ]
+            },] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class CardAuthorComponent {
 }
 CardAuthorComponent.decorators = [
@@ -419,7 +453,7 @@ CardAuthorComponent.decorators = [
                 template: "<p class=\"card__author\">\n    <ng-content></ng-content>\n</p>\n",
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.ShadowDom,
-                styles: [".card__author{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0}"]
+                styles: [".card__author{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0}.card__author p{margin-top:0;margin-bottom:.5rem;color:var(--et-ui-color-gray-300);font-size:.75rem}.card__author p:last-child{margin-bottom:0}"]
             }] }
 ];
 
@@ -917,5 +951,5 @@ TestimonialModule.decorators = [
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { AuthorComponent, AuthorModule, ButtonComponent, ButtonFavoriteComponent, ButtonFavoriteModule, ButtonLinkComponent, ButtonLinkModule, ButtonModule, CardAuthorComponent, CardAuthorModule, CardBodyComponent, CardBodyModule, CardComponent, CardContentComponent, CardContentModule, CardDescriptionComponent, CardDescriptionModule, CardFooterComponent, CardFooterModule, CardImageComponent, CardImageModule, CardMetaComponent, CardMetaModule, CardModule, CardOverlayComponent, CardOverlayModule, CardTimeComponent, CardTimeModule, CardTitleComponent, CardTitleModule, RatingComponent, RatingModule, ReviewAuthorComponent, ReviewAuthorModule, ReviewComponent, ReviewDescriptionComponent, ReviewDescriptionModule, ReviewModule, ReviewTitleComponent, ReviewTitleModule, TestimonialComponent, TestimonialModule };
+export { AuthorComponent, AuthorModule, ButtonComponent, ButtonFavoriteComponent, ButtonFavoriteModule, ButtonLinkComponent, ButtonLinkModule, ButtonModule, CardAuthorComponent, CardAuthorModule, CardBodyComponent, CardBodyModule, CardComponent, CardContentComponent, CardContentModule, CardDescriptionComponent, CardDescriptionModule, CardFooterComponent, CardFooterModule, CardImageComponent, CardImageModule, CardInfoComponent, CardInfoModule, CardMetaComponent, CardMetaModule, CardModule, CardOverlayComponent, CardOverlayModule, CardTimeComponent, CardTimeModule, CardTitleComponent, CardTitleModule, RatingComponent, RatingModule, ReviewAuthorComponent, ReviewAuthorModule, ReviewComponent, ReviewDescriptionComponent, ReviewDescriptionModule, ReviewModule, ReviewTitleComponent, ReviewTitleModule, TestimonialComponent, TestimonialModule };
 //# sourceMappingURL=espressotutorialsgmbh-espresso-ui.js.map
