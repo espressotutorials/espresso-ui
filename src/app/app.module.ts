@@ -14,6 +14,7 @@ import {
     CardModule,
     CardTitleModule,
     CardTimeModule,
+    CardTopButtonModule,
     CardOverlayModule,
     CardDescriptionModule,
     CardFooterModule,
@@ -55,7 +56,8 @@ import { TestimonialModule } from 'espresso-ui';
         ReviewDescriptionModule,
         ReviewAuthorModule,
         TestimonialModule,
-        CardInfoModule
+        CardInfoModule,
+        CardTopButtonModule
     ],
     providers: [],
     bootstrap: [

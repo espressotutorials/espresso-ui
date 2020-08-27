@@ -108,6 +108,7 @@
 
             <div class="w-1/4 px-8 mb-8">
                 <lib-card class="component">
+                    <lib-card-top-button [id]="123" (cardTopBtnEvent)="trashButton($event)"></lib-card-top-button>
                     <lib-card-body [overlay]="true">
                         <lib-card-image>
                             <img class="w-full h-auto" src="../assets/images/601.jpg" alt="test">

@@ -1,0 +1,29 @@
+:host {}
+
+.card__top__button {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-color: var(--et-ui-color-orange-400);
+    color: var(--et-ui-color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    border: 0;
+    border-bottom-right-radius: .25rem;
+
+    &:focus {
+        outline: none;
+    }
+
+    svg {
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        pointer-events: none;
+    }
+}

@@ -16,4 +16,8 @@ export class AppComponent {
     onFavoriteChange(event: any) {
         console.log(event);
     }
+
+    trashButton(event: any) {
+        console.log(event);
+    }
 }

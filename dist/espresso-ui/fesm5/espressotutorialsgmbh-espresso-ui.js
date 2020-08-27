@@ -557,7 +557,7 @@ var CardFooterComponent = /** @class */ (function () {
                     template: "<div class=\"card__footer\">\n    <ng-content></ng-content>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".card__footer{align-self:flex-end;padding:0 1rem 1rem}"]
+                    styles: [":host{margin-top:auto}.card__footer{align-self:flex-end;padding:0 1rem 1rem}"]
                 }] }
     ];
     return CardFooterComponent;
@@ -716,6 +716,66 @@ var CardDescriptionModule = /** @class */ (function () {
                 },] }
     ];
     return CardDescriptionModule;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var CardTopButtonComponent = /** @class */ (function () {
+    function CardTopButtonComponent() {
+        this.cardTopBtnEvent = new EventEmitter();
+    }
+    /**
+     * @return {?}
+     */
+    CardTopButtonComponent.prototype.clickHandler = /**
+     * @return {?}
+     */
+    function () {
+        this.cardTopBtnEvent.emit(this.id);
+    };
+    CardTopButtonComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'lib-card-top-button',
+                    template: "<button class=\"card__top__button\" (click)=\"clickHandler()\">\n    <svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"trash-alt\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><path fill=\"currentColor\" d=\"M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z\"></path></svg>\n</button>\n",
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.ShadowDom,
+                    styles: [".card__top__button{box-sizing:border-box;position:absolute;left:0;top:0;width:32px;height:32px;background-color:var(--et-ui-color-orange-400);color:var(--et-ui-color-white);display:flex;justify-content:center;align-items:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;border-bottom-right-radius:.25rem}.card__top__button:focus{outline:0}.card__top__button svg{box-sizing:border-box;width:20px;height:20px;pointer-events:none}"]
+                }] }
+    ];
+    CardTopButtonComponent.propDecorators = {
+        id: [{ type: Input }],
+        cardTopBtnEvent: [{ type: Output }]
+    };
+    return CardTopButtonComponent;
+}());
+if (false) {
+    /** @type {?} */
+    CardTopButtonComponent.prototype.id;
+    /** @type {?} */
+    CardTopButtonComponent.prototype.cardTopBtnEvent;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var CardTopButtonModule = /** @class */ (function () {
+    function CardTopButtonModule() {
+    }
+    CardTopButtonModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [CardTopButtonComponent],
+                    imports: [
+                        CommonModule
+                    ],
+                    exports: [
+                        CardTopButtonComponent
+                    ]
+                },] }
+    ];
+    return CardTopButtonModule;
 }());
 
 /**
@@ -1104,5 +1164,5 @@ var TestimonialModule = /** @class */ (function () {
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { AuthorComponent, AuthorModule, ButtonComponent, ButtonFavoriteComponent, ButtonFavoriteModule, ButtonLinkComponent, ButtonLinkModule, ButtonModule, CardAuthorComponent, CardAuthorModule, CardBodyComponent, CardBodyModule, CardComponent, CardContentComponent, CardContentModule, CardDescriptionComponent, CardDescriptionModule, CardFooterComponent, CardFooterModule, CardImageComponent, CardImageModule, CardInfoComponent, CardInfoModule, CardMetaComponent, CardMetaModule, CardModule, CardOverlayComponent, CardOverlayModule, CardTimeComponent, CardTimeModule, CardTitleComponent, CardTitleModule, RatingComponent, RatingModule, ReviewAuthorComponent, ReviewAuthorModule, ReviewComponent, ReviewDescriptionComponent, ReviewDescriptionModule, ReviewModule, ReviewTitleComponent, ReviewTitleModule, TestimonialComponent, TestimonialModule };
+export { AuthorComponent, AuthorModule, ButtonComponent, ButtonFavoriteComponent, ButtonFavoriteModule, ButtonLinkComponent, ButtonLinkModule, ButtonModule, CardAuthorComponent, CardAuthorModule, CardBodyComponent, CardBodyModule, CardComponent, CardContentComponent, CardContentModule, CardDescriptionComponent, CardDescriptionModule, CardFooterComponent, CardFooterModule, CardImageComponent, CardImageModule, CardInfoComponent, CardInfoModule, CardMetaComponent, CardMetaModule, CardModule, CardOverlayComponent, CardOverlayModule, CardTimeComponent, CardTimeModule, CardTitleComponent, CardTitleModule, CardTopButtonComponent, CardTopButtonModule, RatingComponent, RatingModule, ReviewAuthorComponent, ReviewAuthorModule, ReviewComponent, ReviewDescriptionComponent, ReviewDescriptionModule, ReviewModule, ReviewTitleComponent, ReviewTitleModule, TestimonialComponent, TestimonialModule };
 //# sourceMappingURL=espressotutorialsgmbh-espresso-ui.js.map

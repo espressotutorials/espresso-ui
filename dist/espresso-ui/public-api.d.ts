@@ -28,6 +28,8 @@ export * from './lib/card-meta/card-meta.component';
 export * from './lib/card-meta/card-meta.module';
 export * from './lib/card-description/card-description.component';
 export * from './lib/card-description/card-description.module';
+export * from './lib/card-top-button/card-top-button.component';
+export * from './lib/card-top-button/card-top-button.module';
 export * from './lib/rating/rating.component';
 export * from './lib/rating/rating.module';
 export * from './lib/author/author.component';
