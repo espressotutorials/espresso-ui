@@ -10,7 +10,7 @@ var CardOverlayComponent = /** @class */ (function () {
         { type: Component, args: [{
                     selector: 'lib-card-overlay',
                     template: "<div class=\"card__overlay\">\n    <ng-content></ng-content>\n</div>\n",
-                    styles: [".card__overlay{box-sizing:border-box;display:none;z-index:10;position:absolute;bottom:0;left:0;right:0;box-shadow:var(--et-ui-shadow-lg);padding:.75rem;min-height:100%;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;border-radius:var(--et-ui-radius);background-color:var(--et-ui-color-gray-100)}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans)}.card__overlay{box-sizing:border-box;display:none;z-index:10;position:absolute;bottom:0;left:0;right:0;box-shadow:var(--et-ui-shadow-lg);padding:.75rem;min-height:100%;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;border-radius:var(--et-ui-radius);background-color:var(--et-ui-color-gray-100)}"]
                 }] }
     ];
     return CardOverlayComponent;

@@ -14,7 +14,7 @@ CardBodyComponent.decorators = [
                 template: "<div class=\"card__body\"  [class.card__body--overlay]=\"overlay\">\n    <ng-content></ng-content>\n</div>\n",
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.ShadowDom,
-                styles: [".card__body:hover .card__overlay{display:flex}"]
+                styles: [":host{font-family:var(--et-ui-font-sans)}.card__body:hover .card__overlay{display:flex}"]
             }] }
 ];
 CardBodyComponent.propDecorators = {

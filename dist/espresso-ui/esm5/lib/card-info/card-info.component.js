@@ -12,7 +12,7 @@ var CardInfoComponent = /** @class */ (function () {
                     template: "<div class=\"card__info\">\n    <ng-content></ng-content>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".card__info{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.8rem;margin:.5rem 0;text-align:left}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans)}.card__info{box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.8rem;margin:.5rem 0;text-align:left}"]
                 }] }
     ];
     return CardInfoComponent;

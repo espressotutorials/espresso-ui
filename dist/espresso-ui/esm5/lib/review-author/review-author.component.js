@@ -12,7 +12,7 @@ var ReviewAuthorComponent = /** @class */ (function () {
                     template: "<p class=\"review__author\">\n    <ng-content></ng-content>\n</p>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".review__author{width:100%;box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0 0;font-weight:400}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans)}.review__author{width:100%;box-sizing:border-box;color:var(--et-ui-color-gray-300);font-size:.75rem;margin:.5rem 0 0;font-weight:400}"]
                 }] }
     ];
     return ReviewAuthorComponent;

@@ -12,7 +12,7 @@ var CardContentComponent = /** @class */ (function () {
                     template: "<div class=\"card__content\">\n    <slot name=\"time\"></slot>\n    <slot name=\"title\"></slot>\n    <slot name=\"info\"></slot>\n    <slot name=\"author\"></slot>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".card__content{box-sizing:border-box;padding:1rem;width:100%}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans)}.card__content{box-sizing:border-box;padding:1rem;width:100%}"]
                 }] }
     ];
     return CardContentComponent;

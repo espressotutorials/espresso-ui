@@ -12,7 +12,7 @@ var ReviewTitleComponent = /** @class */ (function () {
                     template: "<h3 class=\"review__title\">\n    <ng-content></ng-content>\n</h3>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".review__title{width:100%;box-sizing:border-box;color:var(--et-ui-color-gray-500);font-size:1.15rem;margin:1rem 0 .5rem;font-weight:400}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans)}.review__title{width:100%;box-sizing:border-box;color:var(--et-ui-color-gray-500);font-size:1.15rem;margin:1rem 0 .5rem;font-weight:400}"]
                 }] }
     ];
     return ReviewTitleComponent;

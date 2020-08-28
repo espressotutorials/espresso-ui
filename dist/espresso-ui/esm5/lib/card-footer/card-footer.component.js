@@ -12,7 +12,7 @@ var CardFooterComponent = /** @class */ (function () {
                     template: "<div class=\"card__footer\">\n    <ng-content></ng-content>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [":host{margin-top:auto}.card__footer{align-self:flex-end;padding:0 1rem 1rem}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans);margin-top:auto}.card__footer{align-self:flex-end;padding:0 1rem 1rem}"]
                 }] }
     ];
     return CardFooterComponent;

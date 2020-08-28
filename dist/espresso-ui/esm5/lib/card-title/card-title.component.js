@@ -18,7 +18,7 @@ var CardTitleComponent = /** @class */ (function () {
         { type: Component, args: [{
                     selector: 'lib-card-title',
                     template: "<h3 class=\"card__title\">\n    <ng-content></ng-content>\n</h3>\n",
-                    styles: [".card__title{box-sizing:border-box;text-align:left;color:var(--et-ui-color-gray-500);font-size:1.25rem;margin:0 0 .5rem;font-weight:400}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans)}.card__title{box-sizing:border-box;text-align:left;color:var(--et-ui-color-gray-500);font-size:1.25rem;margin:0 0 .5rem;font-weight:400}"]
                 }] }
     ];
     /** @nocollapse */

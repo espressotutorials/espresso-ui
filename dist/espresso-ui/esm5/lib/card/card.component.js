@@ -12,7 +12,7 @@ var CardComponent = /** @class */ (function () {
                     template: "<div class=\"card\">\n    <ng-content></ng-content>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".card{box-sizing:border-box;position:relative;background:var(--et-ui-color-white);border-radius:var(--et-ui-radius);box-shadow:var(--et-ui-shadow-lg);display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;height:100%}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans)}.card{box-sizing:border-box;position:relative;background:var(--et-ui-color-white);border-radius:var(--et-ui-radius);box-shadow:var(--et-ui-shadow-lg);display:flex;flex-direction:column;flex-wrap:wrap;justify-content:flex-start;height:100%}"]
                 }] }
     ];
     return CardComponent;

@@ -12,7 +12,7 @@ var ReviewComponent = /** @class */ (function () {
                     template: "<div class=\"review\">\n    <slot name=\"rating\"></slot>\n    <slot name=\"title\"></slot>\n    <slot name=\"description\"></slot>\n    <slot name=\"author\"></slot>\n</div>\n",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.ShadowDom,
-                    styles: [".review{width:100%;box-sizing:border-box;padding:1rem}"]
+                    styles: [":host{font-family:var(--et-ui-font-sans)}.review{width:100%;box-sizing:border-box;padding:1rem}"]
                 }] }
     ];
     return ReviewComponent;
